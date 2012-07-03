@@ -82,31 +82,37 @@ html {
 h1 {
   font-size: 2.5em;
   line-height: 1.28em;
-  font-family: "Gotham";
-  font-weight: 700;
+  font-family: "freight-sans-pro", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  font-weight: 900;
 }
 
 /* line 38, ../sass/_base.scss */
 h2 {
   font-size: 1.467em;
   line-height: 1.091em;
+  font-family: "freight-sans-pro", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  font-weight: 900;
 }
 
 /* line 39, ../sass/_base.scss */
 h3 {
   font-size: 1.2em;
   line-height: 1.333em;
+  font-family: "freight-sans-pro", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  font-weight: 900;
 }
 
-/* line 41, ../sass/_base.scss */
-p {
-  margin-bottom: 1.6em;
+/* line 40, ../sass/_base.scss */
+h3 {
+  font-size: 1.067em;
+  line-height: 1.5em;
+  font-family: "freight-sans-pro", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  font-weight: 400;
 }
 
-/* line 45, ../sass/_base.scss */
-em {
-  font-size: 0.867em;
-  line-height: 1.846em;
+/* line 42, ../sass/_base.scss */
+.emote {
+  font-family: "adobe-garamond-pro", Georgia, serif;
   font-style: italic;
 }
 
@@ -119,21 +125,21 @@ em {
 /* --------------------------------------------------------------------
    Global
 -------------------------------------------------------------------- */
-/* line 86, ../sass/_base.scss */
+/* line 80, ../sass/_base.scss */
 body {
-  font-family: "Adobe Garamond Pro", serif;
+  font-family: "adobe-garamond-pro", Georgia, serif;
   -webkit-font-smoothing: antialiased;
   color: #222222;
   background: #fdfdfd;
   border-top: 0.2em solid #ff3300;
 }
 
-/* line 94, ../sass/_base.scss */
+/* line 88, ../sass/_base.scss */
 img, object {
   max-width: 100%;
 }
 
-/* line 98, ../sass/_base.scss */
+/* line 92, ../sass/_base.scss */
 a {
   color: #ff3300;
   text-decoration: none;
@@ -143,18 +149,30 @@ a {
   -o-transition-duration: 0.2s;
   transition-duration: 0.2s;
 }
-/* line 102, ../sass/_base.scss */
+/* line 96, ../sass/_base.scss */
 a:hover {
   text-decoration: underline;
 }
 
-/* line 107, ../sass/_base.scss */
+/* line 101, ../sass/_base.scss */
+p {
+  margin-bottom: 1.6em;
+}
+
+/* line 105, ../sass/_base.scss */
+em {
+  font-size: 0.867em;
+  line-height: 1.846em;
+  font-style: italic;
+}
+
+/* line 110, ../sass/_base.scss */
 ::selection {
   background: #cccccc;
   /* Safari */
 }
 
-/* line 110, ../sass/_base.scss */
+/* line 113, ../sass/_base.scss */
 ::-moz-selection {
   background: #cccccc;
   /* Firefox */
@@ -294,7 +312,7 @@ article.bio {
 article.bio h2 {
   font-style: italic;
 }
-/* line 73, ../sass/_base.scss */
+/* line 67, ../sass/_base.scss */
 article.bio h2::after {
   content: ' ';
   display: block;

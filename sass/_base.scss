@@ -29,23 +29,17 @@ $base-line-height     : 48px;
 
 /* Fonts */
 
-$title: "Gotham";
-$longform: "Adobe Garamond Pro", serif;
+$title: "freight-sans-pro", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+$longform: "adobe-garamond-pro", Georgia, serif;
 
 /* Sizing */
 
-h1 { @include adjust-font-size-to(75px); font-family: $title; font-weight: 700;}
-h2 { @include adjust-font-size-to(44px); }
-h3 { @include adjust-font-size-to(36px); }
+h1 { @include adjust-font-size-to(75px); font-family: $title; font-weight: 900;}
+h2 { @include adjust-font-size-to(44px); font-family: $title; font-weight: 900;}
+h3 { @include adjust-font-size-to(36px); font-family: $title; font-weight: 900;}
+h3 { @include adjust-font-size-to(32px); font-family: $title; font-weight: 400;}
 
-p {
-  @include margin-trailer();
-}
-
-em {
-  @include adjust-font-size-to(26px);
-  font-style: italic;
-}
+.emote { font-family: $longform; font-style: italic; }
 
 /* --------------------------------------------------------------------
    Colors
@@ -102,6 +96,15 @@ a {
   &:hover {
     text-decoration: underline;
   }
+}
+
+p {
+  @include margin-trailer();
+}
+
+em {
+  @include adjust-font-size-to(26px);
+  font-style: italic;
 }
 
 ::selection {
