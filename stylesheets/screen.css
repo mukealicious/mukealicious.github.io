@@ -113,6 +113,7 @@ h3 {
 /* line 42, ../sass/_base.scss */
 .emote {
   font-family: "adobe-garamond-pro", Georgia, serif;
+  font-weight: 400;
   font-style: italic;
 }
 
