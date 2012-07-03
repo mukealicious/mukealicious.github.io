@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title> {% if page.title %} {{ page.title }} | {% endif %} Mikey Wills</title>
+    <link rel="stylesheet" type="text/css" media="screen, projection" href="/stylesheets/screen.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+  </head>
+  <body>
+    <div class="container">
+<!-- Header -->   
+      <header>
+        <a href="#"><img src="images/mukelogo.png" alt="Mikey Wills Logo" id="logo"></a>
+<!-- Nav -->   
+        <nav>
+          <ul>
+            <li><a href="#" title="">Writing</a></li>
+            <li><a href="#" title="">Reading</a></li>
+            <li><a href="#" title="">Resources</a></li>
+            <li><a href="#" title="">Info</a></li>
+          </ul>
+        </nav>
+      </header>
+<!-- Content -->   
+      {{ content }}
+<!-- Footer -->
+      <footer>
+        <div>
+          <span>An original Mikey Wills joint</span>
+          <em>This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/">Try Not to Steal it License</a>.</em>
+        </div>
+        <div>
+          <ul>
+            <li><a href="mailto:mikey@kontorsioninc.com?subject=Yo Mukey!">Contact Me</a></li>
+            <li><a href="https://twitter.com/mukealicious">@Mukealicious</a></li>
+          </ul>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>

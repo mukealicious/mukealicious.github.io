@@ -1,0 +1,95 @@
+// ---------------------------------------------------------------------------
+// Imports
+
+@import "compass/reset";
+@import "susy";
+@import "compass";
+
+// ---------------------------------------------------------------------------
+/* Base Grid */
+
+$total-columns  : 12;
+$column-width   : 2em;
+$gutter-width   : 0.5em;
+$grid-padding   : 1.75em;
+
+$show-grid-backgrounds  : true;
+
+/* Typography */
+
+$base-font-size       : 30px;
+$base-line-height     : 48px;
+@include establish-baseline;
+
+$title: "Gotham";
+$longform: "Adobe Garamond Pro", serif;
+
+h1 { @include adjust-font-size-to(75px); font-family: $title; font-weight: 700;}
+h2 { @include adjust-font-size-to(44px); }
+h3 { @include adjust-font-size-to(36px); }
+
+p {
+  @include margin-trailer();
+}
+
+em {
+  @include adjust-font-size-to(26px);
+  font-style: italic;
+}
+
+/* Colors */
+
+$primary: #FF3300;
+$black: #222;
+$mid-grey: #666;
+$grey: #CCC;
+$white: #FDFDFD;
+
+/* Mixins */
+
+@mixin ease-flip {
+  -webkit-transition: all .25s ease-in;
+  -moz-transition: all .25s ease-in;
+  -o-transition: all .25s ease-in;
+  transition: all .25s ease-in;
+}
+
+@mixin dash-tail {
+  &::after {
+    content: ' ';
+    display: block;
+    width: 10em;
+    border-top: 1px dashed $grey;
+    margin: 1em auto 1em auto;
+  }
+}
+
+/* Global Styles */
+
+body {
+  font-family: $longform;
+  -webkit-font-smoothing: antialiased;
+  color: $black;
+  background: $white;
+  border-top: 0.2em solid $primary;
+}
+
+img, object {
+  max-width: 100%;
+}
+
+a {
+  color: $primary;
+  text-decoration: none;
+  @include transition-duration(0.2s);
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+::selection {
+  background: $grey; /* Safari */
+  }
+::-moz-selection {
+  background: $grey; /* Firefox */
+}

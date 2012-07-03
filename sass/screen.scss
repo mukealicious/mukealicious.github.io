@@ -1,0 +1,132 @@
+// ---------------------------------------------------------------------------
+// Imports
+
+@import "base";
+
+/* -------------------------------------------------------------------------*/
+
+/* --------------------------------------------------------------------
+   Layout
+-------------------------------------------------------------------- */
+/* Base */
+
+.container {
+  @include container;
+}
+
+section, article, header, footer {
+  @include span-columns(12 omega);
+}
+
+/* Head */
+
+header {
+  text-align: center;
+  padding: 1em 0;
+}
+
+img#logo {
+  position: absolute;
+  top: 1em;
+  left: 1em;
+  @include ease-flip;
+  &:hover
+  {
+    @include rotate(180deg);
+  }
+}
+
+nav {
+  @include adjust-font-size-to(27px);
+  line-height: 48px;
+  border-bottom: 1px dashed $grey;
+  margin-bottom: 1em;
+  ul li {
+    display: inline-block;
+    margin-right: 1em;
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+  a {
+    color: $black;
+    &:hover {
+      color: $primary;
+      text-decoration: none;
+    }
+  }
+}
+
+/* Home */
+
+section.home img {
+  margin-bottom: 2em;
+}
+
+article.bio {
+  text-align: center;
+  h2 {
+    font-style: italic;
+    @include dash-tail;
+  }
+}
+
+/* Footer */
+
+footer {
+  @include rhythm(0.5, 0.75, 1, 1);
+  @include adjust-font-size-to(21px);
+  @include reset-baseline;
+  border-top: 1px dashed $grey;
+  color: $mid-grey;
+  div {
+    @include span-columns(8);
+    &:last-child {
+      @include span-columns(4 omega);
+      text-align: right;
+    }
+  }
+  span {
+    display: block;
+  }
+}
+
+/* --------------------------------------------------------------------
+   Media Queries
+-------------------------------------------------------------------- */
+
+/* < 1700px */
+
+@media screen and (max-width: 1700px) {
+  $base-font-size       : 24px;
+  $base-line-height     : 36px;
+  @include establish-baseline;
+}
+
+/* < 825px */
+
+@media screen and (max-width: 875px) {
+  $base-font-size       : 21px;
+  $base-line-height     : 31px;
+  @include establish-baseline;
+  .container {
+    max-width: 24em;
+  }
+  img#logo {
+    position: inherit;
+    margin-bottom: 0.25em;
+  }
+  h1 { @include adjust-font-size-to(44px); }
+  h2 { @include adjust-font-size-to(26px); }
+}
+
+/* < 490px */
+
+@media screen and (max-width: 490px) {
+  $base-font-size       : 18px;
+  $base-line-height     : 27px;
+  @include establish-baseline;
+  .container {
+    padding: 0 0.75em;
+  }
+}
