@@ -6,7 +6,9 @@
 @import "compass";
 
 // ---------------------------------------------------------------------------
-/* Base Grid */
+/* --------------------------------------------------------------------
+   Base Grid
+-------------------------------------------------------------------- */
 
 $total-columns  : 12;
 $column-width   : 2em;
@@ -15,14 +17,22 @@ $grid-padding   : 1.75em;
 
 $show-grid-backgrounds  : true;
 
-/* Typography */
+/* --------------------------------------------------------------------
+   Typography
+-------------------------------------------------------------------- */
+
+/* Vertical Rhythm */
 
 $base-font-size       : 30px;
 $base-line-height     : 48px;
 @include establish-baseline;
 
+/* Fonts */
+
 $title: "Gotham";
 $longform: "Adobe Garamond Pro", serif;
+
+/* Sizing */
 
 h1 { @include adjust-font-size-to(75px); font-family: $title; font-weight: 700;}
 h2 { @include adjust-font-size-to(44px); }
@@ -37,7 +47,9 @@ em {
   font-style: italic;
 }
 
-/* Colors */
+/* --------------------------------------------------------------------
+   Colors
+-------------------------------------------------------------------- */
 
 $primary: #FF3300;
 $black: #222;
@@ -45,7 +57,9 @@ $mid-grey: #666;
 $grey: #CCC;
 $white: #FDFDFD;
 
-/* Mixins */
+/* --------------------------------------------------------------------
+   Mixins
+-------------------------------------------------------------------- */
 
 @mixin ease-flip {
   -webkit-transition: all .25s ease-in;
@@ -64,7 +78,9 @@ $white: #FDFDFD;
   }
 }
 
-/* Global Styles */
+/* --------------------------------------------------------------------
+   Global
+-------------------------------------------------------------------- */
 
 body {
   font-family: $longform;
