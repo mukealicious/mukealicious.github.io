@@ -38,13 +38,13 @@ img#logo {
 }
 
 nav {
-  @include adjust-font-size-to(27px);
+  @include adjust-font-size-to(24px);
   line-height: 48px;
   border-bottom: 1px dashed $grey;
   margin-bottom: 1em;
   ul li {
     display: inline-block;
-    margin-right: 1em;
+    margin-right: 2em;
     &:last-child {
       margin-right: 0;
     }
@@ -85,7 +85,7 @@ footer {
 -------------------------------------------------------------------- */
 
 section.home img {
-  margin-bottom: 2em;
+  margin-bottom: 1em;
 }
 
 article.bio {

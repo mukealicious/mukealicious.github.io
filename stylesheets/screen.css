@@ -238,8 +238,8 @@ img#logo:hover {
 
 /* line 40, ../sass/screen.scss */
 nav {
-  font-size: 0.9em;
-  line-height: 1.778em;
+  font-size: 0.8em;
+  line-height: 2em;
   line-height: 48px;
   border-bottom: 1px dashed #cccccc;
   margin-bottom: 1em;
@@ -247,7 +247,7 @@ nav {
 /* line 45, ../sass/screen.scss */
 nav ul li {
   display: inline-block;
-  margin-right: 1em;
+  margin-right: 2em;
 }
 /* line 48, ../sass/screen.scss */
 nav ul li:last-child {
@@ -303,7 +303,7 @@ footer span {
 -------------------------------------------------------------------- */
 /* line 87, ../sass/screen.scss */
 section.home img {
-  margin-bottom: 2em;
+  margin-bottom: 1em;
 }
 
 /* line 91, ../sass/screen.scss */
