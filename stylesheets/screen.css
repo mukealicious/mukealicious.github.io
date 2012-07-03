@@ -274,16 +274,17 @@ footer {
   line-height: 2.286em;
   line-height: 1.6em;
   border-top: 1px dashed #cccccc;
+  font-family: "freight-sans-pro", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
   color: #666666;
 }
-/* line 69, ../sass/screen.scss */
+/* line 70, ../sass/screen.scss */
 footer div {
   width: 66.102%;
   float: left;
   margin-right: 1.695%;
   display: inline;
 }
-/* line 71, ../sass/screen.scss */
+/* line 72, ../sass/screen.scss */
 footer div:last-child {
   width: 32.203%;
   float: right;
@@ -292,7 +293,7 @@ footer div:last-child {
   display: inline;
   text-align: right;
 }
-/* line 76, ../sass/screen.scss */
+/* line 77, ../sass/screen.scss */
 footer span {
   display: block;
 }
@@ -300,16 +301,16 @@ footer span {
 /* --------------------------------------------------------------------
    Home Page
 -------------------------------------------------------------------- */
-/* line 86, ../sass/screen.scss */
+/* line 87, ../sass/screen.scss */
 section.home img {
   margin-bottom: 2em;
 }
 
-/* line 90, ../sass/screen.scss */
+/* line 91, ../sass/screen.scss */
 article.bio {
   text-align: center;
 }
-/* line 92, ../sass/screen.scss */
+/* line 93, ../sass/screen.scss */
 article.bio h2 {
   font-style: italic;
 }
@@ -325,7 +326,7 @@ article.bio h2::after {
 /* --------------------------------------------------------------------
    Misc
 -------------------------------------------------------------------- */
-/* line 102, ../sass/screen.scss */
+/* line 103, ../sass/screen.scss */
 article.coming-soon h1 {
   margin-bottom: 1.6em;
   text-align: center;
@@ -352,24 +353,24 @@ article.coming-soon h1 {
     line-height: 1.476em;
   }
 
-  /* line 127, ../sass/screen.scss */
+  /* line 128, ../sass/screen.scss */
   .container {
     max-width: 24em;
   }
 
-  /* line 130, ../sass/screen.scss */
+  /* line 131, ../sass/screen.scss */
   img#logo {
     position: inherit;
     margin-bottom: 0.25em;
   }
 
-  /* line 134, ../sass/screen.scss */
+  /* line 135, ../sass/screen.scss */
   h1 {
     font-size: 2.095em;
     line-height: 1.409em;
   }
 
-  /* line 135, ../sass/screen.scss */
+  /* line 136, ../sass/screen.scss */
   h2 {
     font-size: 1.238em;
     line-height: 1.192em;
@@ -383,7 +384,7 @@ article.coming-soon h1 {
     line-height: 1.5em;
   }
 
-  /* line 144, ../sass/screen.scss */
+  /* line 145, ../sass/screen.scss */
   .container {
     padding: 0 0.75em;
   }

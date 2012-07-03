@@ -65,6 +65,7 @@ footer {
   @include adjust-font-size-to(21px);
   @include reset-baseline;
   border-top: 1px dashed $grey;
+  font-family: $title;
   color: $mid-grey;
   div {
     @include span-columns(8);
