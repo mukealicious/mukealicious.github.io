@@ -107,6 +107,8 @@ article.hi {
   h1 {
     display: block;
     width: 100%;
+    color: $grey;
+    @include text-shadow($grey-shdw 0px -1px 0);
   }
   img.face {
     width: 11em;
