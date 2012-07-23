@@ -353,39 +353,30 @@ article.hi h2::after {
 /* line 113, ../sass/screen.scss */
 .bio img.face {
   width: 11em;
-  opacity: 0.75;
-  -webkit-transition-duration: 0.2s;
-  -moz-transition-duration: 0.2s;
-  -ms-transition-duration: 0.2s;
-  -o-transition-duration: 0.2s;
-  transition-duration: 0.2s;
 }
-/* line 117, ../sass/screen.scss */
-.bio img.face:hover {
-  opacity: 1;
-}
-/* line 121, ../sass/screen.scss */
+/* line 116, ../sass/screen.scss */
 .bio p {
+  margin-top: 1.6em;
   text-align: left;
 }
 
-/* line 126, ../sass/screen.scss */
+/* line 122, ../sass/screen.scss */
 .recent-projects {
   margin-bottom: 1.6em;
 }
-/* line 127, ../sass/screen.scss */
+/* line 123, ../sass/screen.scss */
 .recent-projects h2 {
   text-align: center;
 }
 
-/* line 133, ../sass/screen.scss */
+/* line 129, ../sass/screen.scss */
 .project {
   width: 32.203%;
   float: left;
   margin-right: 1.695%;
   display: inline;
 }
-/* line 135, ../sass/screen.scss */
+/* line 131, ../sass/screen.scss */
 .project:nth-child(3n) {
   float: right;
   margin-right: 0;
@@ -396,7 +387,7 @@ article.hi h2::after {
 /* --------------------------------------------------------------------
    Misc
 -------------------------------------------------------------------- */
-/* line 142, ../sass/screen.scss */
+/* line 138, ../sass/screen.scss */
 article.coming-soon h1 {
   margin-bottom: 1.6em;
   text-align: center;
@@ -423,24 +414,24 @@ article.coming-soon h1 {
     line-height: 1.476em;
   }
 
-  /* line 167, ../sass/screen.scss */
+  /* line 163, ../sass/screen.scss */
   .container {
     max-width: 24em;
   }
 
-  /* line 170, ../sass/screen.scss */
+  /* line 166, ../sass/screen.scss */
   img#logo {
     position: inherit;
     margin-bottom: 0.25em;
   }
 
-  /* line 174, ../sass/screen.scss */
+  /* line 170, ../sass/screen.scss */
   h1 {
     font-size: 2.095em;
     line-height: 1.409em;
   }
 
-  /* line 175, ../sass/screen.scss */
+  /* line 171, ../sass/screen.scss */
   h2 {
     font-size: 1.238em;
     line-height: 1.192em;
@@ -454,7 +445,7 @@ article.coming-soon h1 {
     line-height: 1.5em;
   }
 
-  /* line 184, ../sass/screen.scss */
+  /* line 180, ../sass/screen.scss */
   .container {
     padding: 0 0.75em;
   }

@@ -112,13 +112,9 @@ article.hi {
   }
   img.face {
     width: 11em;
-    opacity: 0.75;
-    @include transition-duration(0.2s);
-    &:hover {
-      opacity: 1;
-    }
   }
   p {
+    @include leader();
     text-align: left;
   }
 }
