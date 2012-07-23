@@ -7,7 +7,7 @@ title: Info
   <article class="full-bio">
     <div class="bio">
       <img src="images/mikeyface.png" alt="Mikey's Face" class="face">
-      <h1>Mikey Who?</h1>
+      <h1 id="mikey-who">Mikey Who?</h1>
       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
       tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
       quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
@@ -33,3 +33,9 @@ title: Info
     </div>
   </article>
 </section>
+<!-- Fit Text -->
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+<script src="scripts/jquery.fittext.js"></script>
+<script>
+  $("#mikey-who").fitText(0.75);
+</script>

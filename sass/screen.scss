@@ -104,8 +104,9 @@ article.hi {
   @include span-columns(12 omega);
   @include dash-tail(100%);
   text-align: center;
-  p {
-    text-align: left;
+  h1 {
+    display: block;
+    width: 100%;
   }
   img.face {
     width: 11em;
@@ -114,6 +115,9 @@ article.hi {
     &:hover {
       opacity: 1;
     }
+  }
+  p {
+    text-align: left;
   }
 }
 
