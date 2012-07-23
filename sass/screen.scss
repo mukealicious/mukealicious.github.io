@@ -88,12 +88,24 @@ section.home img {
   margin-bottom: 1em;
 }
 
-article.bio {
+article.hi {
   text-align: center;
   h2 {
     font-style: italic;
     @include dash-tail;
   }
+}
+
+/* --------------------------------------------------------------------
+   Info Page
+-------------------------------------------------------------------- */
+
+div.face {
+  @include span-columns(3);
+}
+
+div.bio {
+  @include span-columns(9 omega);
 }
 
 /* --------------------------------------------------------------------
