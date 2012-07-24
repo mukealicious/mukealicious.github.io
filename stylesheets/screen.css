@@ -368,26 +368,41 @@ article.hi h2::after {
 .recent-projects h2 {
   text-align: center;
 }
+/* line 127, ../sass/screen.scss */
+.recent-projects a {
+  text-decoration: none;
+  color: #222222;
+}
 
-/* line 129, ../sass/screen.scss */
+/* line 133, ../sass/screen.scss */
 .project {
   width: 32.203%;
   float: left;
   margin-right: 1.695%;
   display: inline;
+  opacity: 0.66;
+  -webkit-transition-duration: 0.2s;
+  -moz-transition-duration: 0.2s;
+  -ms-transition-duration: 0.2s;
+  -o-transition-duration: 0.2s;
+  transition-duration: 0.2s;
 }
-/* line 131, ../sass/screen.scss */
+/* line 135, ../sass/screen.scss */
 .project:nth-child(3n) {
   float: right;
   margin-right: 0;
   #margin-left: -0.5em;
   display: inline;
 }
+/* line 138, ../sass/screen.scss */
+.project:hover {
+  opacity: 1;
+}
 
 /* --------------------------------------------------------------------
    Misc
 -------------------------------------------------------------------- */
-/* line 138, ../sass/screen.scss */
+/* line 147, ../sass/screen.scss */
 article.coming-soon h1 {
   margin-bottom: 1.6em;
   text-align: center;
@@ -414,24 +429,24 @@ article.coming-soon h1 {
     line-height: 1.476em;
   }
 
-  /* line 163, ../sass/screen.scss */
+  /* line 172, ../sass/screen.scss */
   .container {
     max-width: 24em;
   }
 
-  /* line 166, ../sass/screen.scss */
+  /* line 175, ../sass/screen.scss */
   img#logo {
     position: inherit;
     margin-bottom: 0.25em;
   }
 
-  /* line 170, ../sass/screen.scss */
+  /* line 179, ../sass/screen.scss */
   h1 {
     font-size: 2.095em;
     line-height: 1.409em;
   }
 
-  /* line 171, ../sass/screen.scss */
+  /* line 180, ../sass/screen.scss */
   h2 {
     font-size: 1.238em;
     line-height: 1.192em;
@@ -445,7 +460,7 @@ article.coming-soon h1 {
     line-height: 1.5em;
   }
 
-  /* line 180, ../sass/screen.scss */
+  /* line 189, ../sass/screen.scss */
   .container {
     padding: 0 0.75em;
   }

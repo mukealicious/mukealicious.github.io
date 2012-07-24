@@ -124,11 +124,20 @@ article.hi {
     text-align: center;
   }
   @include trailer();
+  a {
+    text-decoration: none;
+    color: $black;
+  }
 }
 
 .project {
   @include span-columns(4);
   &:nth-child(3n) { @include omega; } // every third project completes a row.
+  opacity: 0.66;
+  @include transition-duration(0.2s);
+  &:hover {
+    opacity: 1;
+  }
 }
 
 /* --------------------------------------------------------------------
