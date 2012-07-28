@@ -103,7 +103,6 @@ p {
 }
 
 em {
-  @include adjust-font-size-to(26px);
   font-style: italic;
 }
 
