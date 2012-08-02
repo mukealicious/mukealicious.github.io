@@ -5,8 +5,15 @@ layout: default
 <section class="home">
   <img src="images/mikeyzagprint.jpg" alt="Mikey Wills Print Poster">
   <article class="hi">
-    <h1>Hi, I'm Mikey Wills</h1>
-    <h2 class="emote">A designer based out of Orange County, California.</h2>
+    <h1 id="hi">Hi, I'm Mikey Wills</h1>
+    <h2 class="emote" id="iam">A designer based out of Orange County, California.</h2>
     <p>I am a partner at Kontorsion where I <a href="http://kontorsioninc.com" title="Kontorsion">design clothes</a>. When I'm not working with textiles, I'm most likely geeking out somewhere on the web. I <a href="/writing.html" title="Writing">write</a> on my blog, <a href="https://twitter.com/mukealicious" title="My Twitter">tweet</a> on that Twitter thing, <a href="https://github.com/Mukealicious" title="My GitHub">commit code</a> to GitHub, and <a href="http://www.rdio.com/people/Mukealicious/" title="My Rdio">vibe out</a> on Rdio.</p>
   </article>
 </section>
+<!-- Fit Text -->
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+<script src="scripts/jquery.fittext.js"></script>
+<script>
+  $("#hi").fitText(1);
+  $("#iam").fitText(2);
+</script>
