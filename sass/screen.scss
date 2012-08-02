@@ -132,10 +132,15 @@ article.hi {
 .project {
   @include span-columns(4);
   &:nth-child(4n) { @include omega; } // every third project completes a row.
+  @include leader(0.5);
   opacity: 0.66;
   @include transition-duration(0.2s);
   &:hover {
     opacity: 1;
+  }
+  h4 {
+    line-height: 1;
+    margin-bottom: -0.45em;
   }
 }
 
@@ -182,6 +187,9 @@ article.coming-soon h1 {
   }
   h1 { @include adjust-font-size-to(44px); }
   h2 { @include adjust-font-size-to(26px); }
+  .project {
+    @include span-columns(12 omega);
+  }
 }
 
 /* < 490px */

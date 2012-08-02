@@ -43,6 +43,8 @@ h4 { @include adjust-font-size-to(26px); font-family: $title; font-weight: 400;}
 
 .emphasize { @include adjust-font-size-to(40px); line-height: 1.5em; }
 
+.sub { @include adjust-font-size-to(18px); font-style: italic; }
+
 /* --------------------------------------------------------------------
    Colors
 -------------------------------------------------------------------- */
