@@ -189,6 +189,7 @@ article.coming-soon h1 {
   h2 { @include adjust-font-size-to(26px); }
   .project {
     @include span-columns(12 omega);
+    opacity: 1;
   }
 }
 

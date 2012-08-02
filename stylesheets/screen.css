@@ -484,6 +484,7 @@ article.coming-soon h1 {
     margin-right: 0;
     #margin-left: -0.5em;
     display: inline;
+    opacity: 1;
   }
 }
 /* < 490px */
@@ -494,7 +495,7 @@ article.coming-soon h1 {
     line-height: 1.5em;
   }
 
-  /* line 201, ../sass/screen.scss */
+  /* line 202, ../sass/screen.scss */
   .container {
     padding: 0 0.75em;
   }
