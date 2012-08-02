@@ -4,4 +4,6 @@ gem 'jekyll'
 gem 'rack-contrib'
 gem 'rack-rewrite'
 gem 'thin'
-gem "susy", "~> 1.0.rc.2"
+gem 'compass', '>= 0.13.alpha.0'
+gem 'sass', '>= 3.2.0.alpha.277'
+gem "susy"
