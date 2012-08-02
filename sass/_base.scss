@@ -41,6 +41,8 @@ h4 { @include adjust-font-size-to(26px); font-family: $title; font-weight: 400;}
 
 .emote { font-family: $longform; font-weight: 400; font-style: italic; }
 
+.emphasize { @include adjust-font-size-to(40px); line-height: 1.5em; }
+
 /* --------------------------------------------------------------------
    Colors
 -------------------------------------------------------------------- */
