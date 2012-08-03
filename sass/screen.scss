@@ -103,11 +103,21 @@ article.hi {
   @include span-columns(12 omega);
   @include dash-tail(100%);
   text-align: center;
-  h1 {
+  h1, h2 {
     display: block;
     width: 100%;
     color: $grey;
-    @include text-shadow($grey-shdw 0px -1px 0);
+    @include text-shadow($grey-shdw 0 -1px 0);
+  }
+  h2 {
+    @include transition-duration(0.2s);
+    a {
+      // Get rid of default link styling
+      color: inherit;
+      &:hover {
+        text-decoration: none;
+      }
+    }
   }
   img.face {
     width: 11em;
@@ -155,6 +165,17 @@ article.coming-soon h1 {
   @include text-shadow($grey-shdw 0px -1px 0);
 }
 
+/* Icon Styling */
+
+[class^="ss-"]:hover:before, [class*=" ss-"]:hover:before { 
+  @include rotate(-15deg);
+}
+
+a.ss-write:before {
+  margin-right: 0.25em;
+  font-size: 0.75em;
+}
+
 /* --------------------------------------------------------------------
    Media Queries
 -------------------------------------------------------------------- */
@@ -182,12 +203,14 @@ article.coming-soon h1 {
     max-width: 24em;
   }
   img#logo {
+    // Center logo
     position: inherit;
     margin-bottom: 0.25em;
   }
   h1 { @include adjust-font-size-to(44px); }
   h2 { @include adjust-font-size-to(26px); }
   .project {
+    // Recent projects go to full width one column layout and no opacity hover state
     @include span-columns(12 omega);
     opacity: 1;
   }

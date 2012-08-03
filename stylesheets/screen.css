@@ -187,13 +187,13 @@ em {
 
 /* line 113, ../sass/_base.scss */
 ::selection {
-  background: #cccccc;
+  background: #d9d9d9;
   /* Safari */
 }
 
 /* line 116, ../sass/_base.scss */
 ::-moz-selection {
-  background: #cccccc;
+  background: #d9d9d9;
   /* Firefox */
 }
 
@@ -258,7 +258,7 @@ nav {
   font-size: 0.8em;
   line-height: 2em;
   line-height: 48px;
-  border-bottom: 1px dashed #cccccc;
+  border-bottom: 1px dashed #d9d9d9;
   margin-bottom: 1em;
 }
 /* line 44, ../sass/screen.scss */
@@ -290,7 +290,7 @@ footer {
   font-size: 0.7em;
   line-height: 2.286em;
   line-height: 1.6em;
-  border-top: 1px dashed #cccccc;
+  border-top: 1px dashed #d9d9d9;
   font-family: "freight-sans-pro", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
   color: #666666;
 }
@@ -336,7 +336,7 @@ article.hi h2::after {
   content: ' ';
   display: block;
   width: 10em;
-  border-top: 1px dashed #cccccc;
+  border-top: 1px dashed #d9d9d9;
   margin: 1em auto 1em auto;
 }
 
@@ -357,41 +357,57 @@ article.hi h2::after {
   content: ' ';
   display: block;
   width: 100%;
-  border-top: 1px dashed #cccccc;
+  border-top: 1px dashed #d9d9d9;
   margin: 1em auto 1em auto;
 }
 /* line 106, ../sass/screen.scss */
-.bio h1 {
+.bio h1, .bio h2 {
   display: block;
   width: 100%;
-  color: #cccccc;
-  text-shadow: #aaaaaa 0px -1px 0;
+  color: #d9d9d9;
+  text-shadow: #aaaaaa 0 -1px 0;
 }
 /* line 112, ../sass/screen.scss */
+.bio h2 {
+  -webkit-transition-duration: 0.2s;
+  -moz-transition-duration: 0.2s;
+  -ms-transition-duration: 0.2s;
+  -o-transition-duration: 0.2s;
+  transition-duration: 0.2s;
+}
+/* line 114, ../sass/screen.scss */
+.bio h2 a {
+  color: inherit;
+}
+/* line 117, ../sass/screen.scss */
+.bio h2 a:hover {
+  text-decoration: none;
+}
+/* line 122, ../sass/screen.scss */
 .bio img.face {
   width: 11em;
 }
-/* line 115, ../sass/screen.scss */
+/* line 125, ../sass/screen.scss */
 .bio p {
   margin-top: 1.6em;
   text-align: left;
 }
 
-/* line 121, ../sass/screen.scss */
+/* line 131, ../sass/screen.scss */
 .recent-projects {
   margin-bottom: 1.6em;
 }
-/* line 122, ../sass/screen.scss */
+/* line 132, ../sass/screen.scss */
 .recent-projects h2 {
   text-align: center;
 }
-/* line 126, ../sass/screen.scss */
+/* line 136, ../sass/screen.scss */
 .recent-projects a {
   text-decoration: none;
   color: #222222;
 }
 
-/* line 132, ../sass/screen.scss */
+/* line 142, ../sass/screen.scss */
 .project {
   width: 32.203%;
   float: left;
@@ -405,18 +421,18 @@ article.hi h2::after {
   -o-transition-duration: 0.2s;
   transition-duration: 0.2s;
 }
-/* line 134, ../sass/screen.scss */
+/* line 144, ../sass/screen.scss */
 .project:nth-child(4n) {
   float: right;
   margin-right: 0;
   #margin-left: -0.5em;
   display: inline;
 }
-/* line 138, ../sass/screen.scss */
+/* line 148, ../sass/screen.scss */
 .project:hover {
   opacity: 1;
 }
-/* line 141, ../sass/screen.scss */
+/* line 151, ../sass/screen.scss */
 .project h4 {
   line-height: 1;
   margin-bottom: -0.45em;
@@ -425,12 +441,28 @@ article.hi h2::after {
 /* --------------------------------------------------------------------
    Misc
 -------------------------------------------------------------------- */
-/* line 151, ../sass/screen.scss */
+/* line 161, ../sass/screen.scss */
 article.coming-soon h1 {
   margin-bottom: 1.6em;
   text-align: center;
-  color: #cccccc;
+  color: #d9d9d9;
   text-shadow: #aaaaaa 0px -1px 0;
+}
+
+/* Icon Styling */
+/* line 170, ../sass/screen.scss */
+[class^="ss-"]:hover:before, [class*=" ss-"]:hover:before {
+  -webkit-transform: rotate(-15deg);
+  -moz-transform: rotate(-15deg);
+  -ms-transform: rotate(-15deg);
+  -o-transform: rotate(-15deg);
+  transform: rotate(-15deg);
+}
+
+/* line 174, ../sass/screen.scss */
+a.ss-write:before {
+  margin-right: 0.25em;
+  font-size: 0.75em;
 }
 
 /* --------------------------------------------------------------------
@@ -454,30 +486,30 @@ article.coming-soon h1 {
 }
 /* < 875px */
 @media screen and (max-width: 875px) {
-  /* line 181, ../sass/screen.scss */
+  /* line 202, ../sass/screen.scss */
   .container {
     max-width: 24em;
   }
 
-  /* line 184, ../sass/screen.scss */
+  /* line 205, ../sass/screen.scss */
   img#logo {
     position: inherit;
     margin-bottom: 0.25em;
   }
 
-  /* line 188, ../sass/screen.scss */
+  /* line 210, ../sass/screen.scss */
   h1 {
     font-size: 2.095em;
     line-height: 1.545em;
   }
 
-  /* line 189, ../sass/screen.scss */
+  /* line 211, ../sass/screen.scss */
   h2 {
     font-size: 1.238em;
     line-height: 1.308em;
   }
 
-  /* line 190, ../sass/screen.scss */
+  /* line 212, ../sass/screen.scss */
   .project {
     width: 100%;
     float: right;
@@ -495,7 +527,7 @@ article.coming-soon h1 {
     line-height: 1.5em;
   }
 
-  /* line 202, ../sass/screen.scss */
+  /* line 225, ../sass/screen.scss */
   .container {
     padding: 0 0.75em;
   }
