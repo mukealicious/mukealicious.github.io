@@ -213,6 +213,11 @@ a.ss-write:before {
     // Recent projects go to full width one column layout and no opacity hover state
     @include span-columns(12 omega);
     opacity: 1;
+    margin: 1.25em 0;
+    text-align: center;
+    img {
+      margin-top: -0.5em;
+    }
   }
 }
 

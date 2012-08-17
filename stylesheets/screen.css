@@ -94,8 +94,8 @@ h1 {
 
 /* line 38, ../sass/_base.scss */
 h2 {
-  font-size: 1.533em;
-  line-height: 2.087em;
+  font-size: 1.53333em;
+  line-height: 2.08696em;
   font-family: "freight-sans-pro", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
   font-weight: 900;
 }
@@ -103,15 +103,15 @@ h2 {
 /* line 39, ../sass/_base.scss */
 h3 {
   font-size: 1.2em;
-  line-height: 1.333em;
+  line-height: 1.33333em;
   font-family: "freight-sans-pro", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
   font-weight: 900;
 }
 
 /* line 40, ../sass/_base.scss */
 h4 {
-  font-size: 0.867em;
-  line-height: 1.846em;
+  font-size: 0.86667em;
+  line-height: 1.84615em;
   font-family: "freight-sans-pro", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
   font-weight: 400;
 }
@@ -125,7 +125,7 @@ h4 {
 
 /* line 44, ../sass/_base.scss */
 .emphasize {
-  font-size: 1.333em;
+  font-size: 1.33333em;
   line-height: 1.2em;
   line-height: 1.5em;
 }
@@ -133,7 +133,7 @@ h4 {
 /* line 46, ../sass/_base.scss */
 .sub {
   font-size: 0.6em;
-  line-height: 2.667em;
+  line-height: 2.66667em;
   font-style: italic;
 }
 
@@ -288,7 +288,7 @@ footer {
   padding-bottom: 1.6em;
   margin-bottom: 1.6em;
   font-size: 0.7em;
-  line-height: 2.286em;
+  line-height: 2.28571em;
   line-height: 1.6em;
   border-top: 1px dashed #d9d9d9;
   font-family: "freight-sans-pro", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
@@ -296,14 +296,14 @@ footer {
 }
 /* line 69, ../sass/screen.scss */
 footer div {
-  width: 66.102%;
+  width: 66.10169%;
   float: left;
-  margin-right: 1.695%;
+  margin-right: 1.69492%;
   display: inline;
 }
 /* line 71, ../sass/screen.scss */
 footer div:last-child {
-  width: 32.203%;
+  width: 32.20339%;
   float: right;
   margin-right: 0;
   #margin-left: -0.5em;
@@ -409,9 +409,9 @@ article.hi h2::after {
 
 /* line 142, ../sass/screen.scss */
 .project {
-  width: 32.203%;
+  width: 32.20339%;
   float: left;
-  margin-right: 1.695%;
+  margin-right: 1.69492%;
   display: inline;
   margin-top: 0.8em;
   opacity: 0.66;
@@ -473,7 +473,7 @@ a.ss-write:before {
   /* line 66, ../../../.rvm/gems/ruby-1.9.3-p194/gems/compass-0.13.alpha.0/frameworks/compass/stylesheets/compass/typography/_vertical_rhythm.scss */
   html {
     font-size: 150%;
-    line-height: 1.583em;
+    line-height: 1.58333em;
   }
 }
 /* < 1100px */
@@ -481,7 +481,7 @@ a.ss-write:before {
   /* line 66, ../../../.rvm/gems/ruby-1.9.3-p194/gems/compass-0.13.alpha.0/frameworks/compass/stylesheets/compass/typography/_vertical_rhythm.scss */
   html {
     font-size: 131.25%;
-    line-height: 1.619em;
+    line-height: 1.61905em;
   }
 }
 /* < 875px */
@@ -499,14 +499,14 @@ a.ss-write:before {
 
   /* line 210, ../sass/screen.scss */
   h1 {
-    font-size: 2.095em;
-    line-height: 1.545em;
+    font-size: 2.09524em;
+    line-height: 1.54545em;
   }
 
   /* line 211, ../sass/screen.scss */
   h2 {
-    font-size: 1.238em;
-    line-height: 1.308em;
+    font-size: 1.2381em;
+    line-height: 1.30769em;
   }
 
   /* line 212, ../sass/screen.scss */
@@ -517,6 +517,12 @@ a.ss-write:before {
     #margin-left: -0.5em;
     display: inline;
     opacity: 1;
+    margin: 1.25em 0;
+    text-align: center;
+  }
+  /* line 218, ../sass/screen.scss */
+  .project img {
+    margin-top: -0.5em;
   }
 }
 /* < 490px */
@@ -527,7 +533,7 @@ a.ss-write:before {
     line-height: 1.5em;
   }
 
-  /* line 225, ../sass/screen.scss */
+  /* line 230, ../sass/screen.scss */
   .container {
     padding: 0 0.75em;
   }
