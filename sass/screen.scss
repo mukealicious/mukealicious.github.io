@@ -39,7 +39,7 @@ img#logo {
 nav {
   @include adjust-font-size-to(24px);
   line-height: 48px;
-  border-bottom: 1px dashed $grey;
+  border-bottom: 1px dashed $secondary;
   margin-bottom: 1em;
   ul li {
     display: inline-block;
@@ -48,24 +48,17 @@ nav {
       margin-right: 0;
     }
   }
-  a {
-    color: $black;
-    &:hover {
-      color: $primary;
-      text-decoration: none;
-    }
-  }
 }
 
 /* Footer */
 
 footer {
   @include rhythm(0.5, 0.75, 1, 1);
-  @include adjust-font-size-to(21px);
+  @include adjust-font-size-to(18px);
   @include reset-baseline;
-  border-top: 1px dashed $grey;
+  border-top: 1px dashed $secondary;
   font-family: $title;
-  color: $mid-grey;
+  color: $grey-shdw;
   div {
     @include span-columns(8);
     &:last-child {
