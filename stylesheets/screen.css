@@ -413,7 +413,7 @@ article.hi h2::after {
 
 /* line 135, ../sass/screen.scss */
 .project {
-  width: 32.20339%;
+  width: 49.15254%;
   float: left;
   margin-right: 1.69492%;
   display: inline;
@@ -426,7 +426,7 @@ article.hi h2::after {
   transition-duration: 0.2s;
 }
 /* line 137, ../sass/screen.scss */
-.project:nth-child(4n) {
+.project:nth-child(odd) {
   float: right;
   margin-right: 0;
   #margin-left: -0.5em;

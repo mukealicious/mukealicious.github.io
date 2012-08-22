@@ -133,8 +133,8 @@ article.hi {
 }
 
 .project {
-  @include span-columns(4);
-  &:nth-child(4n) { @include omega; } // every third project completes a row.
+  @include span-columns(6);
+  &:nth-child(odd) { @include omega; } // every second project completes a row.
   @include leader(0.5);
   opacity: 0.66;
   @include transition-duration(0.2s);
