@@ -27,6 +27,7 @@ header {
 
 img#logo {
   position: absolute;
+  width: 60px;
   top: 1em;
   left: 1em;
   @include ease-flip;
