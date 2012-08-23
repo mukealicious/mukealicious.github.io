@@ -154,10 +154,6 @@ article.hi {
 
 /* Post */
 
-article.short.post {
-  @include trailer();
-}
-
 h1.post-title {
   text-align: center;
   color: $grey;

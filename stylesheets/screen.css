@@ -450,18 +450,13 @@ article.hi h2::after {
 -------------------------------------------------------------------- */
 /* Post */
 /* line 157, ../sass/screen.scss */
-article.short.post {
-  margin-bottom: 1.6em;
-}
-
-/* line 161, ../sass/screen.scss */
 h1.post-title {
   text-align: center;
   color: #ecf0ee;
   text-shadow: #bfc5c2 0px -1px 0;
 }
 
-/* line 167, ../sass/screen.scss */
+/* line 163, ../sass/screen.scss */
 span.timestamp {
   display: block;
   text-align: center;
@@ -478,12 +473,12 @@ span.timestamp::after {
   margin: 1em auto 1em auto;
 }
 
-/* line 176, ../sass/screen.scss */
+/* line 172, ../sass/screen.scss */
 img.post-image {
   margin-top: 0.8em;
 }
 
-/* line 180, ../sass/screen.scss */
+/* line 176, ../sass/screen.scss */
 div.post-content {
   margin-top: 1.6em;
 }
@@ -491,7 +486,7 @@ div.post-content {
 /* --------------------------------------------------------------------
    Misc
 -------------------------------------------------------------------- */
-/* line 188, ../sass/screen.scss */
+/* line 184, ../sass/screen.scss */
 h1.alpha {
   margin-bottom: 0.8em;
   text-align: center;
@@ -500,7 +495,7 @@ h1.alpha {
 }
 
 /* Icon Styling */
-/* line 197, ../sass/screen.scss */
+/* line 193, ../sass/screen.scss */
 [class^="ss-"]:hover:before, [class*=" ss-"]:hover:before {
   -webkit-transform: rotate(-15deg);
   -moz-transform: rotate(-15deg);
@@ -509,7 +504,7 @@ h1.alpha {
   transform: rotate(-15deg);
 }
 
-/* line 201, ../sass/screen.scss */
+/* line 197, ../sass/screen.scss */
 a.ss-write:before {
   margin-right: 0.25em;
   font-size: 0.75em;
@@ -536,30 +531,30 @@ a.ss-write:before {
 }
 /* < 875px */
 @media screen and (max-width: 875px) {
-  /* line 229, ../sass/screen.scss */
+  /* line 225, ../sass/screen.scss */
   .container {
     max-width: 24em;
   }
 
-  /* line 232, ../sass/screen.scss */
+  /* line 228, ../sass/screen.scss */
   img#logo {
     position: inherit;
     margin-bottom: 0.25em;
   }
 
-  /* line 237, ../sass/screen.scss */
+  /* line 233, ../sass/screen.scss */
   h1 {
     font-size: 2.09524em;
     line-height: 1.54545em;
   }
 
-  /* line 238, ../sass/screen.scss */
+  /* line 234, ../sass/screen.scss */
   h2 {
     font-size: 1.2381em;
     line-height: 1.30769em;
   }
 
-  /* line 239, ../sass/screen.scss */
+  /* line 235, ../sass/screen.scss */
   .project {
     width: 100%;
     float: right;
@@ -570,7 +565,7 @@ a.ss-write:before {
     margin: 1.25em 0;
     text-align: center;
   }
-  /* line 245, ../sass/screen.scss */
+  /* line 241, ../sass/screen.scss */
   .project img {
     margin-top: -0.5em;
   }
@@ -583,7 +578,7 @@ a.ss-write:before {
     line-height: 1.5em;
   }
 
-  /* line 257, ../sass/screen.scss */
+  /* line 253, ../sass/screen.scss */
   .container {
     padding: 0 0.75em;
   }

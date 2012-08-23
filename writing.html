@@ -2,14 +2,16 @@
 layout: default
 title: Writing
 ---
-<!-- Article List -->
+<!-- Latest Article -->
 <section class="writing">
     {% for post in site.posts limit:1 %}
     <article class="short post">
-      <h1 class="post-title">
+      <a href="{{ post.url }}" title="{{ post.title }}">
+        <h1 class="post-title">
         {{ post.title }}
-      </h1>
-      <span class="timestamp">{{ post.date | date_to_string }}</span>
+        </h1>
+        <span class="timestamp">{{ post.date | date_to_string }}</span>
+      </a>
       {% if post.image != null %}
         <img src="{{ post.image }}" class="post-image">
       {% endif %}
