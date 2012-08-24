@@ -152,18 +152,18 @@ h4 {
 -------------------------------------------------------------------- */
 /* Clearfix (Use @extend .clearfix) */
 /* line 97, ../sass/_base.scss */
-.clearfix, ul.recent-posts li {
+.clearfix, ul.recent-posts li, code {
   zoom: 1;
 }
 /* line 99, ../sass/_base.scss */
-.clearfix:before, ul.recent-posts li:before, .clearfix:after, ul.recent-posts li:after {
+.clearfix:before, ul.recent-posts li:before, code:before, .clearfix:after, ul.recent-posts li:after, code:after {
   content: "\0020";
   display: block;
   height: 0;
   overflow: hidden;
 }
 /* line 105, ../sass/_base.scss */
-.clearfix:after, ul.recent-posts li:after {
+.clearfix:after, ul.recent-posts li:after, code:after {
   clear: both;
 }
 
@@ -593,11 +593,24 @@ blockquote {
 blockquote p {
   color: #666666;
   font-style: italic;
-  padding-left: 1.5em;
+  padding: 0.25em 0 0.25em 1.5em;
+}
+
+/* line 253, ../sass/screen.scss */
+code {
+  display: block;
+  background: #666666;
+  color: #ecf0ee;
+  padding: 0.5em;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  border-radius: 5px;
 }
 
 /* Icon Styling */
-/* line 255, ../sass/screen.scss */
+/* line 264, ../sass/screen.scss */
 [class^="ss-"]:hover:before, [class*=" ss-"]:hover:before {
   -webkit-transform: rotate(-15deg);
   -moz-transform: rotate(-15deg);
@@ -606,7 +619,7 @@ blockquote p {
   transform: rotate(-15deg);
 }
 
-/* line 259, ../sass/screen.scss */
+/* line 268, ../sass/screen.scss */
 a.ss-write:before {
   margin-right: 0.25em;
   font-size: 0.75em;
@@ -633,18 +646,18 @@ a.ss-write:before {
 }
 /* < 875px */
 @media screen and (max-width: 875px) {
-  /* line 287, ../sass/screen.scss */
+  /* line 296, ../sass/screen.scss */
   .container {
     max-width: 24em;
   }
 
-  /* line 290, ../sass/screen.scss */
+  /* line 299, ../sass/screen.scss */
   img#logo {
     position: inherit;
     margin-bottom: 0.25em;
   }
 
-  /* line 295, ../sass/screen.scss */
+  /* line 304, ../sass/screen.scss */
   .project {
     width: 100%;
     float: right;
@@ -655,18 +668,18 @@ a.ss-write:before {
     margin: 1.25em 0;
     text-align: center;
   }
-  /* line 301, ../sass/screen.scss */
+  /* line 310, ../sass/screen.scss */
   .project img {
     margin-top: -0.5em;
   }
 
-  /* line 306, ../sass/screen.scss */
+  /* line 315, ../sass/screen.scss */
   span.date, span.title {
     float: left;
     clear: both;
   }
 
-  /* line 310, ../sass/screen.scss */
+  /* line 319, ../sass/screen.scss */
   span.date {
     margin-top: -0.75em;
   }
@@ -679,7 +692,7 @@ a.ss-write:before {
     line-height: 1.5em;
   }
 
-  /* line 321, ../sass/screen.scss */
+  /* line 330, ../sass/screen.scss */
   .container {
     padding: 0 0.75em;
   }
