@@ -18,6 +18,12 @@ section, article, header, footer {
   @include span-columns(12 omega);
 }
 
+.widget {
+  @include span-columns(12 omega);
+  @include trailer();
+  @include leader();
+}
+
 /* Header */
 
 header {
@@ -154,6 +160,10 @@ article.hi {
 
 /* Post */
 
+article.short.post {
+  border-bottom: 1px dashed $secondary;
+}
+
 h1.post-title {
   text-align: center;
   color: $grey;
@@ -176,6 +186,46 @@ img.post-image {
 div.post-content {
   @include leader();
 }
+
+/* Recent Posts */
+
+div.more-posts h3 {
+  text-align: center;
+  margin-bottom: 1em;
+}
+
+ul.recent-posts {
+  a {
+    @include transition-duration(0);
+    &:hover {
+    color: $black;
+    }
+  }
+  li {
+    @extend .clearfix;
+    display: block;
+    clear: both;
+    @include transition-duration(0.2s);
+    border-bottom: 1px solid $grey;
+    padding: 0.25em 0;
+    &:hover {
+      background: $primary;
+      color: $black;
+      padding-left: 1em;
+      padding-right: 1em;
+    }
+  }
+}
+
+span.title{
+  float: left;
+}
+span.date {
+  float: right;
+  @include adjust-font-size-to(18px);
+  font-style: italic;
+}
+
 
 /* --------------------------------------------------------------------
    Misc
@@ -226,14 +276,14 @@ a.ss-write:before {
     max-width: 24em;
   }
   img#logo {
-    // Center logo
+  // Center logo
     position: inherit;
     margin-bottom: 0.25em;
   }
-  h1 { @include adjust-font-size-to(44px); }
-  h2 { @include adjust-font-size-to(26px); }
+//  h1 { @include adjust-font-size-to(44px); }
+//  h2 { @include adjust-font-size-to(26px); }
   .project {
-    // Recent projects go to full width one column layout and no opacity hover state
+  // Recent projects go to full width one column layout and no opacity hover state
     @include span-columns(12 omega);
     opacity: 1;
     margin: 1.25em 0;
@@ -241,6 +291,14 @@ a.ss-write:before {
     img {
       margin-top: -0.5em;
     }
+  }
+// Make Recent Posts date go under title
+  span.date, span.title {
+    float: left;
+    clear: both;
+  }
+  span.date {
+    margin-top: -0.75em;
   }
 }
 

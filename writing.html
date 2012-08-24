@@ -4,33 +4,33 @@ title: Writing
 ---
 <!-- Latest Article -->
 <section class="writing">
-    {% for post in site.posts limit:1 %}
-    <article class="short post">
+  {% for post in site.posts limit:1 %}
+  <article class="short post">
+    <a href="{{ post.url }}" title="{{ post.title }}">
+      <h1 class="post-title">
+      {{ post.title }}
+      </h1>
+      <span class="timestamp">{{ post.date | date_to_string }}</span>
+    </a>
+    {% if post.image != null %}
+      <img src="{{ post.image }}" class="post-image">
+    {% endif %}
+    <div class="post-content">
+      {{ post.content }}
+    </div>
+  </article>
+  {% endfor %}
+  <div class="widget more-posts">
+    <h3 class="emote">Recent Posts</h3>
+    <ul class="recent-posts">
+    {% for post in site.posts %}
       <a href="{{ post.url }}" title="{{ post.title }}">
-        <h1 class="post-title">
-        {{ post.title }}
-        </h1>
-        <span class="timestamp">{{ post.date | date_to_string }}</span>
-      </a>
-      {% if post.image != null %}
-        <img src="{{ post.image }}" class="post-image">
-      {% endif %}
-      <div class="post-content">
-        {{ post.content }}
-      </div>
-    </article>
-    {% endfor %}
-<!--     <div class="widget">
-      <h3>Recent Posts</h3>
-    {% for post in site.posts limit:5 %}
-      <ul class="recent-posts">
         <li>
-          <a href="{{ post.url }}" title="{{ post.title }}">
-          <span class="date">{{ post.date | date_to_string }}</span>
-          <span class="title">{{ post.title }}</span>
-          </a>
+        <span class="title">{{ post.title }}</span>
+        <span class="date">{{ post.date | date_to_string }}</span>
         </li>
-      </ul>
+      </a>
     {% endfor %}
-    </div> -->
+    </ul>
+  </div>
 </section>
