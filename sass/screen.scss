@@ -280,8 +280,6 @@ a.ss-write:before {
     position: inherit;
     margin-bottom: 0.25em;
   }
-//  h1 { @include adjust-font-size-to(44px); }
-//  h2 { @include adjust-font-size-to(26px); }
   .project {
   // Recent projects go to full width one column layout and no opacity hover state
     @include span-columns(12 omega);

@@ -3,14 +3,14 @@ GEM
   specs:
     albino (1.3.3)
       posix-spawn (>= 0.3.6)
-    chunky_png (1.2.5)
+    chunky_png (1.2.6)
     classifier (1.3.3)
       fast-stemmer (>= 1.0.0)
     compass (0.13.alpha.0)
       chunky_png (~> 1.2)
       fssm (>= 0.2.7)
       sass (~> 3.2.0.alpha.93)
-    daemons (1.1.8)
+    daemons (1.1.9)
     directory_watcher (1.4.1)
     eventmachine (0.12.10)
     fast-stemmer (1.0.1)
@@ -23,7 +23,7 @@ GEM
       liquid (~> 2.3)
       maruku (~> 0.5)
     kramdown (0.13.7)
-    liquid (2.3.0)
+    liquid (2.4.1)
     maruku (0.6.0)
       syntax (>= 1.0.0)
     posix-spawn (0.3.6)
@@ -31,10 +31,10 @@ GEM
     rack-contrib (1.1.0)
       rack (>= 0.9.1)
     rack-rewrite (1.2.1)
-    sass (3.2.0.alpha.277)
-    susy (1.0.rc.2)
+    sass (3.2.1)
+    susy (1.0)
       compass (>= 0.12.2)
-      sass (>= 3.2.0.alpha.247)
+      sass (>= 3.2.0)
     syntax (1.0.0)
     thin (1.4.1)
       daemons (>= 1.0.9)
@@ -49,6 +49,6 @@ DEPENDENCIES
   jekyll
   rack-contrib
   rack-rewrite
-  sass (>= 3.2.0.alpha.277)
+  sass
   susy
   thin
