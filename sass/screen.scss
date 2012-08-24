@@ -231,11 +231,23 @@ span.date {
    Misc
 -------------------------------------------------------------------- */
 
+/* Type Elements */
+
 h1.alpha {
   @include trailer(0.5);
   text-align: center;
   color: $grey;
   @include text-shadow($grey-shdw 0px -1px 0);
+}
+
+
+blockquote {
+  background: $lt-primary;
+    p {
+    color: $lt-black;
+    font-style: italic;
+    padding-left: 1.5em;
+  }
 }
 
 /* Icon Styling */
