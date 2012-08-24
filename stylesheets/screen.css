@@ -115,8 +115,8 @@ h3 {
 
 /* line 44, ../sass/_base.scss */
 h4 {
-  font-size: 0.86667em;
-  line-height: 1.84615em;
+  font-size: 1.2em;
+  line-height: 1.33333em;
   font-family: "freight-sans-pro", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
   font-weight: 400;
 }
@@ -597,6 +597,19 @@ blockquote p {
 }
 
 /* line 253, ../sass/screen.scss */
+article ul {
+  margin-bottom: 1.6em;
+}
+/* line 255, ../sass/screen.scss */
+article ul a {
+  color: #fa2900;
+}
+/* line 257, ../sass/screen.scss */
+article ul a:hover {
+  text-decoration: underline;
+}
+
+/* line 263, ../sass/screen.scss */
 code {
   display: block;
   background: #666666;
@@ -610,7 +623,7 @@ code {
 }
 
 /* Icon Styling */
-/* line 264, ../sass/screen.scss */
+/* line 274, ../sass/screen.scss */
 [class^="ss-"]:hover:before, [class*=" ss-"]:hover:before {
   -webkit-transform: rotate(-15deg);
   -moz-transform: rotate(-15deg);
@@ -619,7 +632,7 @@ code {
   transform: rotate(-15deg);
 }
 
-/* line 268, ../sass/screen.scss */
+/* line 278, ../sass/screen.scss */
 a.ss-write:before {
   margin-right: 0.25em;
   font-size: 0.75em;
@@ -646,18 +659,18 @@ a.ss-write:before {
 }
 /* < 875px */
 @media screen and (max-width: 875px) {
-  /* line 296, ../sass/screen.scss */
+  /* line 306, ../sass/screen.scss */
   .container {
     max-width: 24em;
   }
 
-  /* line 299, ../sass/screen.scss */
+  /* line 309, ../sass/screen.scss */
   img#logo {
     position: inherit;
     margin-bottom: 0.25em;
   }
 
-  /* line 304, ../sass/screen.scss */
+  /* line 314, ../sass/screen.scss */
   .project {
     width: 100%;
     float: right;
@@ -668,18 +681,18 @@ a.ss-write:before {
     margin: 1.25em 0;
     text-align: center;
   }
-  /* line 310, ../sass/screen.scss */
+  /* line 320, ../sass/screen.scss */
   .project img {
     margin-top: -0.5em;
   }
 
-  /* line 315, ../sass/screen.scss */
+  /* line 325, ../sass/screen.scss */
   span.date, span.title {
     float: left;
     clear: both;
   }
 
-  /* line 319, ../sass/screen.scss */
+  /* line 329, ../sass/screen.scss */
   span.date {
     margin-top: -0.75em;
   }
@@ -692,7 +705,7 @@ a.ss-write:before {
     line-height: 1.5em;
   }
 
-  /* line 330, ../sass/screen.scss */
+  /* line 340, ../sass/screen.scss */
   .container {
     padding: 0 0.75em;
   }

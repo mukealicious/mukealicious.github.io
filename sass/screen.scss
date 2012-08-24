@@ -250,6 +250,16 @@ blockquote {
   }
 }
 
+article ul {
+  @include trailer();
+  a {
+    color: $secondary;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
 code {
   @extend .clearfix;
   display: block;

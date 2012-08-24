@@ -41,7 +41,7 @@ h1, h2, h3, h4 {
 h1 { @include adjust-font-size-to(75px); font-family: $title; font-weight: 900;}
 h2 { @include adjust-font-size-to(46px); font-family: $title; font-weight: 900;}
 h3 { @include adjust-font-size-to(36px); font-family: $title; font-weight: 900;}
-h4 { @include adjust-font-size-to(26px); font-family: $title; font-weight: 400;}
+h4 { @include adjust-font-size-to(36px); font-family: $title; font-weight: 400;}
 
 .emote { font-family: $longform; font-weight: 400; font-style: italic; }
 
