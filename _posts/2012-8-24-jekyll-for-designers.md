@@ -7,7 +7,7 @@ image:
 For the first post on my new site I figured it would only be appropriate if I wrote about how I went about creating the site in the first place. It was a bit of a journey experimenting with different platforms, but I ultimately ended up with [Jekyll](https://github.com/mojombo/jekyll) and I'm glad I did. Let me tell you why.
 
 ## Cheap Bastard
-My roommate, [Jeremy Franz](http://jeremyfranz.com/), initially turned me on to [Jekyll Bootstrap](http://jekyllbootstrap.com/) and [Octopress](http://octopress.org/) as some good options for a blogging platform that are easy to set up and deploy at no cost through GitHub Pages or Heroku. I set up both, but quickly found that the assumptions and out of the box styling of the frameworks end up causing more trouble than their worth for what I was trying to do. If you need a blog in a snap, that's the way to go, but I knew I wanted to write mine from scratch.
+My roommate, [Jeremy Franz](http://jeremyfranz.com/), initially turned me on to [Jekyll Bootstrap](http://jekyllbootstrap.com/) and [Octopress](http://octopress.org/) as some good options for a blogging platform that are easy to set up and deploy at no cost through GitHub Pages or Heroku. I set up both, but quickly found that the assumptions and out of the box styling of the frameworks end up causing more trouble than they're worth for what I was trying to do. If you need a blog in a snap, that's the way to go, but I knew I wanted to write mine from scratch.
 
 I wanted something simpler, so I dug deeper into using just Jekyll. Jekyll is described as 
 >"a simple, blog aware, static site generator. It takes a template directory (representing the raw form of a website), runs it through Textile or Markdown and Liquid converters, and spits out a complete, static website suitable for serving with Apache or your favorite web server."
@@ -17,7 +17,6 @@ Markdown, so hot right now. Sounds like what I'm looking for.
 Jekyll just makes sense for designers. It uses the [Liquid Templating Language](http://liquidmarkup.org/) which is about as simple and human readable as it gets. There's also a nice little [wiki](https://github.com/Shopify/liquid/wiki/Liquid-for-Designers) made just for us dumb designers. Throw in a few lines of liquid and your static site will be faking dynamic content in no time!
 
 ## Have Mercy
-
 If GitHub feels foreign to you, not to worry. We're just going to have to take a few steps back before we start. There are some prerequisites like XCode, Git, Ruby Version Manager (RVM), and Ruby that are necessary just to get your development environment up to speed. Here's [a comprehensive guide](http://www.moncefbelyamani.com/how-to-install-xcode-homebrew-git-rvm-ruby-on-mac/) that covers a few different versions of OSX. If this is all new to you, don't be afraid of the command line. It will be uncomfortable at first, but that will pass. Comfortable is what we're aiming for, not expertise.
 
 ## Jekyll for Designers
