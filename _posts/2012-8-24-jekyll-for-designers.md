@@ -25,7 +25,7 @@ Now, for the scary part. Setting up Jekyll and the designer dreaded command line
 I created a public repo on GitHub named after this post called [Jekyll For Designers](https://github.com/Mukealicious/Jekyll-for-Designers). It has the basic base code and instructions for getting Jekyll up and running and deploying to Heroku, easy as pie. Also, all of the code for this very site using Jekyll is available on [my Muke.me repo](https://github.com/Mukealicious/mukealicious.github.com) for reference. If you run into a dead end, see how I did it. After all, that's how I made it through my initial setup.
 
 ### Initial Configuration
-After forking the [Jekyll For Designers](https://github.com/Mukealicious/Jekyll-for-Designers) repo head to the local project direcotry on your machine in terminal and run
+After forking the [Jekyll For Designers](https://github.com/Mukealicious/Jekyll-for-Designers) repo head to the local project directory on your machine in terminal and run
 
 ```bundle install```
 
