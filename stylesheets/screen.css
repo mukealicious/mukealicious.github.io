@@ -624,18 +624,27 @@ code {
 
 /* Icon Styling */
 /* line 274, ../sass/screen.scss */
-[class^="ss-"]:hover:before, [class*=" ss-"]:hover:before {
+[class^="ss-"]:before, [class*=" ss-"]:before {
+  margin-right: 0.25em;
+}
+
+/* line 279, ../sass/screen.scss */
+[class^="ss-"].right:after, [class*=" ss-"].right:after,
+[class^="ss-"][class*=" ss-social"].right:after, [class*=" ss-"][class*=" ss-social"].right:after {
+  margin-left: 0.5em;
+}
+
+/* line 283, ../sass/screen.scss */
+a.ss-write:before {
+  font-size: 0.75em;
+}
+/* line 285, ../sass/screen.scss */
+a.ss-write:before:hover {
   -webkit-transform: rotate(-15deg);
   -moz-transform: rotate(-15deg);
   -ms-transform: rotate(-15deg);
   -o-transform: rotate(-15deg);
   transform: rotate(-15deg);
-}
-
-/* line 278, ../sass/screen.scss */
-a.ss-write:before {
-  margin-right: 0.25em;
-  font-size: 0.75em;
 }
 
 /* --------------------------------------------------------------------
@@ -659,18 +668,18 @@ a.ss-write:before {
 }
 /* < 875px */
 @media screen and (max-width: 875px) {
-  /* line 306, ../sass/screen.scss */
+  /* line 313, ../sass/screen.scss */
   .container {
     max-width: 24em;
   }
 
-  /* line 309, ../sass/screen.scss */
+  /* line 316, ../sass/screen.scss */
   img#logo {
     position: inherit;
     margin-bottom: 0.25em;
   }
 
-  /* line 314, ../sass/screen.scss */
+  /* line 321, ../sass/screen.scss */
   .project {
     width: 100%;
     float: right;
@@ -681,18 +690,18 @@ a.ss-write:before {
     margin: 1.25em 0;
     text-align: center;
   }
-  /* line 320, ../sass/screen.scss */
+  /* line 327, ../sass/screen.scss */
   .project img {
     margin-top: -0.5em;
   }
 
-  /* line 325, ../sass/screen.scss */
+  /* line 332, ../sass/screen.scss */
   span.date, span.title {
     float: left;
     clear: both;
   }
 
-  /* line 329, ../sass/screen.scss */
+  /* line 336, ../sass/screen.scss */
   span.date {
     margin-top: -0.75em;
   }
@@ -705,7 +714,7 @@ a.ss-write:before {
     line-height: 1.5em;
   }
 
-  /* line 340, ../sass/screen.scss */
+  /* line 347, ../sass/screen.scss */
   .container {
     padding: 0 0.75em;
   }

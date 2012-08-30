@@ -271,13 +271,20 @@ code {
 
 /* Icon Styling */
 
-[class^="ss-"]:hover:before, [class*=" ss-"]:hover:before { 
-  @include rotate(-15deg);
+[class^="ss-"]:before, [class*=" ss-"]:before { 
+  margin-right: 0.25em;
+}
+
+[class^="ss-"].right:after, [class*=" ss-"].right:after,
+[class^="ss-"][class*=" ss-social"].right:after, [class*=" ss-"][class*=" ss-social"].right:after {
+  margin-left: 0.5em;
 }
 
 a.ss-write:before {
-  margin-right: 0.25em;
   font-size: 0.75em;
+  &:hover {
+    @include rotate(-15deg);
+  }
 }
 
 /* --------------------------------------------------------------------
