@@ -78,6 +78,17 @@ footer {
   }
 }
 
+/* Icon Styling */
+
+[class^="ss-"]:before, [class*=" ss-"]:before { 
+  margin-right: 0.25em;
+}
+
+[class^="ss-"].right:after, [class*=" ss-"].right:after,
+[class^="ss-"][class*=" ss-social"].right:after, [class*=" ss-"][class*=" ss-social"].right:after {
+  margin-left: 0.5em;
+}
+
 
 /* --------------------------------------------------------------------
    Home Page
@@ -98,6 +109,8 @@ article.hi {
 /* --------------------------------------------------------------------
    Info Page
 -------------------------------------------------------------------- */
+
+/* Bio Section */
 
 .bio {
   @include span-columns(12 omega);
@@ -126,7 +139,18 @@ article.hi {
     @include leader();
     text-align: left;
   }
+  // wiggle the pencil on write me link hover
+  [class^="ss-"]:hover:before, [class*=" ss-"]:hover:before {
+    @include rotate(-15deg);
+  }
 }
+
+// make pencil smaller to fit size of 'write me'
+a.ss-write:before {
+  font-size: 0.75em;
+}
+
+/* Recent Projects Section */
 
 .recent-projects {
   h2 {
@@ -187,7 +211,7 @@ div.post-content {
   @include leader();
 }
 
-/* Recent Posts */
+/* Previous Posts */
 
 div.more-posts h3 {
   text-align: center;
@@ -267,24 +291,6 @@ code {
   color: $grey;
   padding: 0.5em;
   @include border-radius(5px);
-}
-
-/* Icon Styling */
-
-[class^="ss-"]:before, [class*=" ss-"]:before { 
-  margin-right: 0.25em;
-}
-
-[class^="ss-"].right:after, [class*=" ss-"].right:after,
-[class^="ss-"][class*=" ss-social"].right:after, [class*=" ss-"][class*=" ss-social"].right:after {
-  margin-left: 0.5em;
-}
-
-a.ss-write:before {
-  font-size: 0.75em;
-  &:hover {
-    @include rotate(-15deg);
-  }
 }
 
 /* --------------------------------------------------------------------
