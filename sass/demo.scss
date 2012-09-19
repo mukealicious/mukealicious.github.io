@@ -1,0 +1,51 @@
+/* --------------------------------------------------------------------
+   Imports
+-------------------------------------------------------------------- */
+
+@import "screen";
+
+/* --------------------------------------------------------------------
+   CSS3 On Screen Demo
+-------------------------------------------------------------------- */
+
+.bleed {
+  width: 100%;
+  @include padding-leader(5);
+  @include padding-trailer(5);
+  opacity: 0.5;
+  @include transition-duration(0.75s);
+  strong {
+    @include transition-duration(0.75s);
+  }
+  &:hover {
+    opacity: 1;
+    strong {
+      color: $white;
+    }
+  }
+  h1 {
+    text-align: center;
+    text-transform: uppercase;
+    @include adjust-font-size-to(75px);
+  }
+  &.top {
+    background: $secondary;
+    color: darken($secondary, 15%);
+  }
+  &.mid {
+    background: $primary;
+    color: darken($primary, 30%);
+  }
+  &.bottom {
+    background: $mid-black;
+    color: darken($mid-black, 15%);
+  }
+}
+
+.after {
+  @include leader();
+  h4 a {
+    color: $secondary;
+    text-decoration: underline;
+  }
+}

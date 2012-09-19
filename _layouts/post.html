@@ -7,7 +7,7 @@ layout: default
   </h1>
   <span class="timestamp">{{ page.date | date_to_string }}</span>
   {% if page.image != null %}
-    <img src="{{ page..image }}" class="post-image">
+    <a href="{{ page..img-link }}"><img src="{{ page..image }}" class="post-image"></a>
   {% endif %}
   <div class="post-content">
     {{ content }}
