@@ -80,7 +80,7 @@ footer {
 
 /* Icon Styling */
 
-[class^="ss-"]:before, [class*=" ss-"]:before { 
+[class^="ss-"]:before, [class*=" ss-"]:before {
   margin-right: 0.25em;
 }
 
@@ -209,6 +209,9 @@ img.post-image {
 
 div.post-content {
   @include leader();
+  ul {
+    @include adjust-font-size-to(26px);
+  }
 }
 
 /* Previous Posts */
