@@ -546,21 +546,22 @@ img.post-image {
 /* line 210, ../sass/screen.scss */
 div.post-content {
   margin-top: 1.6em;
+  margin-bottom: 3.2em;
 }
-/* line 212, ../sass/screen.scss */
+/* line 213, ../sass/screen.scss */
 div.post-content ul {
   font-size: 0.86667em;
   line-height: 1.84615em;
 }
 
 /* Previous Posts */
-/* line 219, ../sass/screen.scss */
+/* line 220, ../sass/screen.scss */
 div.more-posts h3 {
   text-align: center;
   margin-bottom: 1em;
 }
 
-/* line 225, ../sass/screen.scss */
+/* line 226, ../sass/screen.scss */
 ul.recent-posts a {
   -webkit-transition-duration: 0;
   -moz-transition-duration: 0;
@@ -568,11 +569,11 @@ ul.recent-posts a {
   -o-transition-duration: 0;
   transition-duration: 0;
 }
-/* line 227, ../sass/screen.scss */
+/* line 228, ../sass/screen.scss */
 ul.recent-posts a:hover {
   color: #333333;
 }
-/* line 231, ../sass/screen.scss */
+/* line 232, ../sass/screen.scss */
 ul.recent-posts li {
   display: block;
   clear: both;
@@ -584,7 +585,7 @@ ul.recent-posts li {
   border-bottom: 1px solid #ecf0ee;
   padding: 0.25em 0;
 }
-/* line 238, ../sass/screen.scss */
+/* line 239, ../sass/screen.scss */
 ul.recent-posts li:hover {
   background: #89fdc2;
   color: #333333;
@@ -592,12 +593,12 @@ ul.recent-posts li:hover {
   padding-right: 1em;
 }
 
-/* line 247, ../sass/screen.scss */
+/* line 248, ../sass/screen.scss */
 span.title {
   float: left;
 }
 
-/* line 250, ../sass/screen.scss */
+/* line 251, ../sass/screen.scss */
 span.date {
   float: right;
   font-size: 0.6em;
@@ -609,7 +610,7 @@ span.date {
    Misc
 -------------------------------------------------------------------- */
 /* Type Elements */
-/* line 263, ../sass/screen.scss */
+/* line 264, ../sass/screen.scss */
 h1.alpha {
   margin-bottom: 0.8em;
   text-align: center;
@@ -617,31 +618,31 @@ h1.alpha {
   text-shadow: #bfc5c2 0px -1px 0;
 }
 
-/* line 271, ../sass/screen.scss */
+/* line 272, ../sass/screen.scss */
 blockquote {
   background: rgba(137, 253, 194, 0.3);
 }
-/* line 273, ../sass/screen.scss */
+/* line 274, ../sass/screen.scss */
 blockquote p {
   color: #666666;
   font-style: italic;
   padding: 0.25em 0 0.25em 1.5em;
 }
 
-/* line 280, ../sass/screen.scss */
+/* line 281, ../sass/screen.scss */
 article ul {
   margin-bottom: 1.6em;
 }
-/* line 282, ../sass/screen.scss */
+/* line 283, ../sass/screen.scss */
 article ul a {
   color: #fa2900;
 }
-/* line 284, ../sass/screen.scss */
+/* line 285, ../sass/screen.scss */
 article ul a:hover {
   text-decoration: underline;
 }
 
-/* line 290, ../sass/screen.scss */
+/* line 291, ../sass/screen.scss */
 code {
   display: block;
   background: #666666;
@@ -675,18 +676,18 @@ code {
 }
 /* < 875px */
 @media screen and (max-width: 875px) {
-  /* line 322, ../sass/screen.scss */
+  /* line 323, ../sass/screen.scss */
   .container {
     max-width: 24em;
   }
 
-  /* line 325, ../sass/screen.scss */
+  /* line 326, ../sass/screen.scss */
   img#logo {
     position: inherit;
     margin-bottom: 0.25em;
   }
 
-  /* line 330, ../sass/screen.scss */
+  /* line 331, ../sass/screen.scss */
   .project {
     width: 100%;
     float: right;
@@ -697,18 +698,18 @@ code {
     margin: 1.25em 0;
     text-align: center;
   }
-  /* line 336, ../sass/screen.scss */
+  /* line 337, ../sass/screen.scss */
   .project img {
     margin-top: -0.5em;
   }
 
-  /* line 341, ../sass/screen.scss */
+  /* line 342, ../sass/screen.scss */
   span.date, span.title {
     float: left;
     clear: both;
   }
 
-  /* line 345, ../sass/screen.scss */
+  /* line 346, ../sass/screen.scss */
   span.date {
     margin-top: -0.75em;
   }
@@ -721,7 +722,7 @@ code {
     line-height: 1.5em;
   }
 
-  /* line 356, ../sass/screen.scss */
+  /* line 357, ../sass/screen.scss */
   .container {
     padding: 0 0.75em;
   }

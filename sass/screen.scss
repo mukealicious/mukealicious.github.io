@@ -209,6 +209,7 @@ img.post-image {
 
 div.post-content {
   @include leader();
+  @include trailer(2);
   ul {
     @include adjust-font-size-to(26px);
   }
