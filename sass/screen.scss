@@ -100,6 +100,9 @@ section.home img {
 
 article.hi {
   text-align: center;
+  h1 {
+    margin-bottom: 0;
+  }
   h2 {
     font-style: italic;
     @include dash-tail($golden-sm);
@@ -173,8 +176,13 @@ a.ss-write:before {
     opacity: 1;
   }
   h4 {
+    font-family: $longform;
     line-height: 1;
     margin-bottom: -0.45em;
+  }
+  .sub {
+    font-family: $title;
+    font-style: normal;
   }
 }
 
