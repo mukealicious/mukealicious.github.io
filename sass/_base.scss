@@ -34,10 +34,14 @@ $longform: "adobe-garamond-pro", Georgia, serif;
 
 /* Sizing */
 
+h1, h2, h3, h4 {
+  margin-bottom: 0.5em;
+}
+
 h1 { @include adjust-font-size-to(75px); font-family: $title; font-weight: 900;}
 h2 { @include adjust-font-size-to(46px); font-family: $title; font-weight: 900;}
 h3 { @include adjust-font-size-to(36px); font-family: $title; font-weight: 900;}
-h4 { @include adjust-font-size-to(26px); font-family: $title; font-weight: 400;}
+h4 { @include adjust-font-size-to(36px); font-family: $title; font-weight: 400;}
 
 .emote { font-family: $longform; font-weight: 400; font-style: italic; }
 
@@ -46,17 +50,26 @@ h4 { @include adjust-font-size-to(26px); font-family: $title; font-weight: 400;}
 .sub { @include adjust-font-size-to(18px); font-style: italic; }
 
 /* --------------------------------------------------------------------
-   Colors
+   Variables
 -------------------------------------------------------------------- */
 
+/* Colors */
+
 $primary: rgba(137, 253, 194, 1.0);    // teal
+$lt-primary: rgba(137, 253, 194, 0.3);    // teal at 30%
 $drk-primary: rgba(32, 51, 41, 1.0);   // dark teal
 $secondary: rgba(250, 41, 0, 1.0);     // red
 $mid-black: rgba(68, 68, 68, 1.0);     // #444
+$lt-black: #666;
 $grey: rgba(236, 240, 238, 1.0);       // light teal grey
 $grey-shdw: rgba(191, 197, 194, 1.0);  // dark teal grey
 $white: rgba(253, 253, 253, 1.0);      // #fdfdfd
 $black: rgba(51, 51, 51, 1.0);         // #333
+
+/* Measurements */
+
+$golden: 61.8033%;
+$golden-sm: 38.1967%;
 
 /* --------------------------------------------------------------------
    Mixins
@@ -78,6 +91,22 @@ $black: rgba(51, 51, 51, 1.0);         // #333
     margin: 1em auto 1em auto;
   }
 }
+
+/* Clearfix (Use @extend .clearfix) */
+
+.clearfix {
+    zoom:1;
+    &:before, &:after {
+        content: "\0020";
+        display: block;
+        height: 0;
+        overflow: hidden;
+    }
+    &:after {
+        clear: both;
+    }
+}
+
 
 /* --------------------------------------------------------------------
    Global

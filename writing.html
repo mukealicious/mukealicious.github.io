@@ -2,9 +2,35 @@
 layout: default
 title: Writing
 ---
-<!-- Article List -->
+<!-- Latest Article -->
 <section class="writing">
-  <article class="coming-soon">
-    <h1>Coming Soon</h1>
+  {% for post in site.posts limit:1 %}
+  <article class="short post">
+    <a href="{{ post.url }}" title="{{ post.title }}">
+      <h1 class="post-title">
+      {{ post.title }}
+      </h1>
+      <span class="timestamp">{{ post.date | date_to_string }}</span>
+    </a>
+    {% if post.image != null %}
+      <a href="{{ post.img-link }}"><img src="{{ post.image }}" class="post-image"></a>
+    {% endif %}
+    <div class="post-content">
+      {{ post.content }}
+    </div>
   </article>
+  {% endfor %}
+  <div class="widget more-posts">
+    <h3>Previous Posts</h3>
+    <ul class="recent-posts">
+    {% for post in site.posts %}
+      <a href="{{ post.url }}" title="{{ post.title }}">
+        <li>
+        <span class="title">{{ post.title }}</span>
+        <span class="date">{{ post.date | date_to_string }}</span>
+        </li>
+      </a>
+    {% endfor %}
+    </ul>
+  </div>
 </section>

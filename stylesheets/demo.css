@@ -4,6 +4,9 @@
 /* --------------------------------------------------------------------
    Imports
 -------------------------------------------------------------------- */
+/* --------------------------------------------------------------------
+   Imports
+-------------------------------------------------------------------- */
 /* line 17, ../../../.rvm/gems/ruby-1.9.3-p194/gems/compass-0.13.alpha.0/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -736,4 +739,67 @@ code {
   .container {
     padding: 0 0.75em;
   }
+}
+/* --------------------------------------------------------------------
+   CSS3 On Screen Demo
+-------------------------------------------------------------------- */
+/* line 11, ../sass/demo.scss */
+.bleed {
+  width: 100%;
+  padding-top: 7.5em;
+  padding-bottom: 7.5em;
+  opacity: 0.5;
+  -webkit-transition-duration: 0.75s;
+  -moz-transition-duration: 0.75s;
+  -ms-transition-duration: 0.75s;
+  -o-transition-duration: 0.75s;
+  transition-duration: 0.75s;
+}
+/* line 17, ../sass/demo.scss */
+.bleed strong {
+  -webkit-transition-duration: 0.75s;
+  -moz-transition-duration: 0.75s;
+  -ms-transition-duration: 0.75s;
+  -o-transition-duration: 0.75s;
+  transition-duration: 0.75s;
+}
+/* line 20, ../sass/demo.scss */
+.bleed:hover {
+  opacity: 1;
+}
+/* line 22, ../sass/demo.scss */
+.bleed:hover strong {
+  color: #fdfdfd;
+}
+/* line 26, ../sass/demo.scss */
+.bleed h1 {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 4.16667em;
+  line-height: 1.08em;
+}
+/* line 31, ../sass/demo.scss */
+.bleed.top {
+  background: #fa2900;
+  color: #ad1c00;
+}
+/* line 35, ../sass/demo.scss */
+.bleed.mid {
+  background: #89fdc2;
+  color: #04e975;
+}
+/* line 39, ../sass/demo.scss */
+.bleed.bottom {
+  background: #444444;
+  color: #1e1e1e;
+}
+
+/* line 45, ../sass/demo.scss */
+.after {
+  margin-top: 1.5em;
+}
+/* line 47, ../sass/demo.scss */
+.after h4 a {
+  color: #fa2900;
+  text-decoration: underline;
 }
