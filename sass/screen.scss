@@ -178,7 +178,8 @@ a.ss-write:before {
   h4 {
     font-family: $longform;
     line-height: 1;
-    margin-bottom: -0.45em;
+    margin-bottom: -0.3em;
+    font-size: 1.25em;
   }
   .sub {
     font-family: $title;
@@ -342,9 +343,6 @@ code {
     opacity: 1;
     margin: 1.25em 0;
     text-align: center;
-    img {
-      margin-top: -0.5em;
-    }
   }
 // Make Recent Posts date go under title
   span.date, span.title {
