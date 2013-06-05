@@ -312,11 +312,11 @@ code {
 
 /* < 1700px */
 
-@media screen and (max-width: 1700px) {
-  $base-font-size       : 24px;
-  $base-line-height     : 38px;
-  @include establish-baseline;
-}
+//@media screen and (max-width: 1700px) {
+//  $base-font-size       : 24px;
+//  $base-line-height     : 38px;
+//  @include establish-baseline;
+//}
 
 /* < 1100px */
 
