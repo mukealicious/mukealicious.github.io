@@ -38,14 +38,14 @@ h1, h2, h3, h4 {
   margin-bottom: 0.5em;
 }
 
-h1 { @include adjust-font-size-to(75px); font-family: $title; font-weight: 900;}
-h2 { @include adjust-font-size-to(46px); font-family: $title; font-weight: 900;}
-h3 { @include adjust-font-size-to(36px); font-family: $title; font-weight: 900;}
-h4 { @include adjust-font-size-to(36px); font-family: $title; font-weight: 400;}
+h1 { @include adjust-font-size-to(75px); font-family: $title; font-weight: 900; line-height: 1.1;}
+h2 { @include adjust-font-size-to(46px); font-family: $title; font-weight: 900; line-height: 1.3;}
+h3 { @include adjust-font-size-to(36px); font-family: $title; font-weight: 900; line-height: 1.3;}
+h4 { @include adjust-font-size-to(36px); font-family: $title; font-weight: 400; line-height: 1.3;}
 
 .emote { font-family: $longform; font-weight: 400; font-style: italic; }
 
-.emphasize { @include adjust-font-size-to(40px); line-height: 1.5em; }
+.emphasize { @include adjust-font-size-to(30px); line-height: 1.5em; }
 
 .sub { @include adjust-font-size-to(18px); font-style: italic; }
 
@@ -55,10 +55,13 @@ h4 { @include adjust-font-size-to(36px); font-family: $title; font-weight: 400;}
 
 /* Colors */
 
+//$primary: #9CF29F;    // teal
 $primary: rgba(137, 253, 194, 1.0);    // teal
 $lt-primary: rgba(137, 253, 194, 0.3);    // teal at 30%
 $drk-primary: rgba(32, 51, 41, 1.0);   // dark teal
-$secondary: rgba(250, 41, 0, 1.0);     // red
+//$secondary: rgba(250, 41, 0, 1.0);     // red
+$secondary: rgba(192, 57, 43, 1.0);     // red
+$secondarylt: rgba(246, 232, 231, 1.0);     // red
 $mid-black: rgba(68, 68, 68, 1.0);     // #444
 $lt-black: #666;
 $grey: rgba(236, 240, 238, 1.0);       // light teal grey
@@ -107,25 +110,83 @@ $golden-sm: 38.1967%;
     }
 }
 
+@include keyframes(colorz) {
+  0%, 100% {
+    color: #9FDAEA;
+  }
+  20% {
+    color: #A69FD0;
+  }
+  40% {
+    color: #C99D92;
+  }
+  60% {
+    color: $primary;
+  }
+  80% {
+    color: #95C2CB;
+  }
+}
+
+
+@include keyframes(bg-colorz) {
+  0%, 100% {
+    background-color: #9FDAEA;
+  }
+  20% {
+    background-color: #A69FD0;
+  }
+  40% {
+    background-color: #C99D92;
+  }
+  60% {
+    background-color: $primary;
+  }
+  80% {
+    background-color: #95C2CB;
+  }
+}
+
+@include keyframes(border-colorz) {
+  0%, 100% {
+    border-color: #9FDAEA;
+  }
+  20% {
+    border-color: #A69FD0;
+  }
+  40% {
+    border-color: #C99D92;
+  }
+  60% {
+    border-color: $primary;
+  }
+  80% {
+    border-color: #95C2CB;
+  }
+}
+
 
 /* --------------------------------------------------------------------
    Global
 -------------------------------------------------------------------- */
 
 body {
+  @include animation(border-colorz 60s infinite);
   font-family: $longform;
   -webkit-font-smoothing: antialiased;
   color: $black;
   background: $white;
-  border-top: 0.3em solid $primary;
+  border-top-width: 0.3em;
+  border-top-style: solid;
 }
 
-p {
+p, article ul {
   color: $mid-black;
   a {
+    @include transition-duration(0.2s);
     color: $secondary;
     &:hover {
-      text-decoration: underline;
+      background: $secondarylt;
     }
   }
 }
@@ -151,9 +212,15 @@ em {
   font-style: italic;
 }
 
-::selection {
-  background: $primary; /* Safari */
-  }
-::-moz-selection {
-  background: $primary; /* Firefox */
+mark {
+  background: #FCFBD0;
+  padding: 0 0.1em;
 }
+
+
+//::selection {
+//  background: $primary; /* Safari */
+//  }
+//::-moz-selection {
+//  background: $primary; /* Firefox */
+//}

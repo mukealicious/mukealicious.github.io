@@ -1,4 +1,4 @@
-source :rubygems
+source 'https://rubygems.org'
 
 gem 'jekyll'
 gem 'rack-contrib'
@@ -7,3 +7,4 @@ gem 'thin'
 gem 'compass', '>= 0.13.alpha.0'
 gem 'sass'
 gem 'susy'
+gem 'rb-fsevent', '~> 0.9'
