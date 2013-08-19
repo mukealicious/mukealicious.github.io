@@ -659,9 +659,8 @@ footer {
   padding-top: 1.1875em;
   padding-bottom: 1.58333em;
   margin-bottom: 1.58333em;
-  font-size: 0.75em;
-  line-height: 2.11111em;
-  line-height: 1.58333em;
+  font-size: 75%;
+  line-height: 1.3;
   border-top: 1px dashed #c0392b;
   font-family: "freight-sans-pro", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
   color: #bfc5c2;
@@ -682,26 +681,22 @@ footer div:last-child {
   display: inline;
   text-align: right;
 }
-/* line 78, ../sass/screen.scss */
-footer .social {
-  font-size: 77.77%;
-}
-/* line 80, ../sass/screen.scss */
+/* line 79, ../sass/screen.scss */
 footer .social li {
   display: inline-block;
 }
-/* line 84, ../sass/screen.scss */
+/* line 83, ../sass/screen.scss */
 footer span {
   display: block;
 }
 
 /* Icon Styling */
-/* line 91, ../sass/screen.scss */
+/* line 90, ../sass/screen.scss */
 [class^="ss-"]:before, [class*=" ss-"]:before {
   margin-right: 0.25em;
 }
 
-/* line 96, ../sass/screen.scss */
+/* line 95, ../sass/screen.scss */
 [class^="ss-"].right:after, [class*=" ss-"].right:after,
 [class^="ss-"][class*=" ss-social"].right:after, [class*=" ss-"][class*=" ss-social"].right:after {
   margin-left: 0.5em;
@@ -711,33 +706,33 @@ footer span {
 /* --------------------------------------------------------------------
    Home Page
 -------------------------------------------------------------------- */
-/* line 106, ../sass/screen.scss */
+/* line 105, ../sass/screen.scss */
 .poster-print {
   background: url('/images/paper-clip.jpg?1376898999') center center no-repeat;
   background-size: 100%;
   margin-bottom: 1em;
   width: 100%;
 }
-/* line 111, ../sass/screen.scss */
+/* line 110, ../sass/screen.scss */
 .poster-print img {
   width: 70%;
   padding: 17% 15%;
 }
 
-/* line 117, ../sass/screen.scss */
+/* line 116, ../sass/screen.scss */
 article.hi {
   text-align: center;
   padding-bottom: 1em;
 }
-/* line 120, ../sass/screen.scss */
+/* line 119, ../sass/screen.scss */
 article.hi h1 {
   margin-bottom: 0;
 }
-/* line 123, ../sass/screen.scss */
+/* line 122, ../sass/screen.scss */
 article.hi h2 {
   font-style: italic;
 }
-/* line 127, ../sass/screen.scss */
+/* line 126, ../sass/screen.scss */
 article.hi a {
   text-align: right;
 }
@@ -746,7 +741,7 @@ article.hi a {
    Info Page
 -------------------------------------------------------------------- */
 /* Bio Section */
-/* line 138, ../sass/screen.scss */
+/* line 137, ../sass/screen.scss */
 .bio {
   width: 100%;
   float: right;
@@ -763,36 +758,36 @@ article.hi a {
   border-top: 1px dashed #c0392b;
   margin: 1em auto 1em auto;
 }
-/* line 142, ../sass/screen.scss */
+/* line 141, ../sass/screen.scss */
 .bio h1 {
   -webkit-animation: colorz 60s infinite;
   -moz-animation: colorz 60s infinite;
   -o-animation: colorz 60s infinite;
   animation: colorz 60s infinite;
 }
-/* line 145, ../sass/screen.scss */
+/* line 144, ../sass/screen.scss */
 .bio h2 {
   text-shadow: #bfc5c2 0 -1px 0;
   color: #ecf0ee;
   display: block;
   width: 100%;
 }
-/* line 151, ../sass/screen.scss */
+/* line 150, ../sass/screen.scss */
 .bio h2 {
   -webkit-transition-duration: 0.2s;
   -moz-transition-duration: 0.2s;
   -o-transition-duration: 0.2s;
   transition-duration: 0.2s;
 }
-/* line 153, ../sass/screen.scss */
+/* line 152, ../sass/screen.scss */
 .bio h2 a {
   color: inherit;
 }
-/* line 156, ../sass/screen.scss */
+/* line 155, ../sass/screen.scss */
 .bio h2 a:hover {
   text-decoration: none;
 }
-/* line 161, ../sass/screen.scss */
+/* line 160, ../sass/screen.scss */
 .bio div.mikey-image {
   background: url('/images/mikeyface.png?1376899010') center center no-repeat;
   -webkit-animation: bg-colorz 60s infinite;
@@ -805,12 +800,12 @@ article.hi a {
   border-radius: 6em;
   margin: 0 auto 1em auto;
 }
-/* line 170, ../sass/screen.scss */
+/* line 169, ../sass/screen.scss */
 .bio p {
   margin-top: 1.58333em;
   text-align: left;
 }
-/* line 175, ../sass/screen.scss */
+/* line 174, ../sass/screen.scss */
 .bio [class^="ss-"]:hover:before, .bio [class*=" ss-"]:hover:before {
   -webkit-transform: rotate(-15deg);
   -moz-transform: rotate(-15deg);
@@ -819,27 +814,27 @@ article.hi a {
   transform: rotate(-15deg);
 }
 
-/* line 181, ../sass/screen.scss */
+/* line 180, ../sass/screen.scss */
 a.ss-write:before {
   font-size: 0.75em;
 }
 
 /* Recent Projects Section */
-/* line 187, ../sass/screen.scss */
+/* line 186, ../sass/screen.scss */
 .recent-projects {
   margin-bottom: 1.58333em;
 }
-/* line 188, ../sass/screen.scss */
+/* line 187, ../sass/screen.scss */
 .recent-projects h2 {
   text-align: center;
 }
-/* line 192, ../sass/screen.scss */
+/* line 191, ../sass/screen.scss */
 .recent-projects a {
   text-decoration: none;
   color: #333333;
 }
 
-/* line 198, ../sass/screen.scss */
+/* line 197, ../sass/screen.scss */
 .project {
   width: 49.15254%;
   float: left;
@@ -847,26 +842,26 @@ a.ss-write:before {
   display: inline;
   margin-top: 0.79167em;
 }
-/* line 200, ../sass/screen.scss */
+/* line 199, ../sass/screen.scss */
 .project:nth-child(odd) {
   float: right;
   margin-right: 0;
   *margin-left: -0.5em;
   display: inline;
 }
-/* line 202, ../sass/screen.scss */
+/* line 201, ../sass/screen.scss */
 .project h4 {
   font-family: "adobe-garamond-pro", Georgia, serif;
   line-height: 1;
   margin-bottom: -0.3em;
   font-size: 1.25em;
 }
-/* line 208, ../sass/screen.scss */
+/* line 207, ../sass/screen.scss */
 .project .sub {
   font-family: "freight-sans-pro", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
   font-style: normal;
 }
-/* line 212, ../sass/screen.scss */
+/* line 211, ../sass/screen.scss */
 .project img {
   opacity: 0.66;
   -webkit-transition-duration: 0.2s;
@@ -874,7 +869,7 @@ a.ss-write:before {
   -o-transition-duration: 0.2s;
   transition-duration: 0.2s;
 }
-/* line 215, ../sass/screen.scss */
+/* line 214, ../sass/screen.scss */
 .project img:hover {
   opacity: 1;
 }
@@ -883,12 +878,12 @@ a.ss-write:before {
    Writing
 -------------------------------------------------------------------- */
 /* Post */
-/* line 227, ../sass/screen.scss */
+/* line 226, ../sass/screen.scss */
 article.short.post {
   border-bottom: 1px dashed #c0392b;
 }
 
-/* line 231, ../sass/screen.scss */
+/* line 230, ../sass/screen.scss */
 h1.post-title {
   -webkit-animation: colorz 60s infinite;
   -moz-animation: colorz 60s infinite;
@@ -898,7 +893,7 @@ h1.post-title {
   margin-top: 0.075em;
 }
 
-/* line 238, ../sass/screen.scss */
+/* line 237, ../sass/screen.scss */
 span.timestamp {
   display: block;
   text-align: center;
@@ -915,41 +910,41 @@ span.timestamp::after {
   margin: 1em auto 1em auto;
 }
 
-/* line 247, ../sass/screen.scss */
+/* line 246, ../sass/screen.scss */
 img.post-image {
   margin-top: 0.79167em;
 }
 
-/* line 251, ../sass/screen.scss */
+/* line 250, ../sass/screen.scss */
 div.post-content {
   margin-top: 1.58333em;
   margin-bottom: 3.16667em;
 }
-/* line 254, ../sass/screen.scss */
+/* line 253, ../sass/screen.scss */
 div.post-content ul {
   font-size: 1.08333em;
   line-height: 1.46154em;
 }
 
 /* Previous Posts */
-/* line 261, ../sass/screen.scss */
+/* line 260, ../sass/screen.scss */
 div.more-posts h3 {
   text-align: center;
   margin-bottom: 1em;
 }
 
-/* line 267, ../sass/screen.scss */
+/* line 266, ../sass/screen.scss */
 ul.recent-posts a {
   -webkit-transition-duration: 0;
   -moz-transition-duration: 0;
   -o-transition-duration: 0;
   transition-duration: 0;
 }
-/* line 269, ../sass/screen.scss */
+/* line 268, ../sass/screen.scss */
 ul.recent-posts a:hover {
   color: #333333;
 }
-/* line 273, ../sass/screen.scss */
+/* line 272, ../sass/screen.scss */
 ul.recent-posts li {
   display: block;
   clear: both;
@@ -960,7 +955,7 @@ ul.recent-posts li {
   border-bottom: 1px solid #ecf0ee;
   padding: 0.25em 0;
 }
-/* line 280, ../sass/screen.scss */
+/* line 279, ../sass/screen.scss */
 ul.recent-posts li:hover {
   background: #f6e8e7;
   color: #333333;
@@ -968,14 +963,14 @@ ul.recent-posts li:hover {
   padding-right: 1em;
 }
 
-/* line 289, ../sass/screen.scss */
+/* line 288, ../sass/screen.scss */
 span.title {
   float: left;
   font-family: "freight-sans-pro", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
   font-weight: 600;
 }
 
-/* line 294, ../sass/screen.scss */
+/* line 293, ../sass/screen.scss */
 span.date {
   float: right;
   font-size: 0.75em;
@@ -987,7 +982,7 @@ span.date {
    Misc
 -------------------------------------------------------------------- */
 /* Type Elements */
-/* line 307, ../sass/screen.scss */
+/* line 306, ../sass/screen.scss */
 h1.alpha {
   margin-bottom: 0.79167em;
   text-align: center;
@@ -995,23 +990,23 @@ h1.alpha {
   text-shadow: #bfc5c2 0px -1px 0;
 }
 
-/* line 315, ../sass/screen.scss */
+/* line 314, ../sass/screen.scss */
 blockquote {
   background: rgba(137, 253, 194, 0.3);
 }
-/* line 317, ../sass/screen.scss */
+/* line 316, ../sass/screen.scss */
 blockquote p {
   color: #666666;
   font-style: italic;
   padding: 0.25em 0 0.25em 1.5em;
 }
 
-/* line 324, ../sass/screen.scss */
+/* line 323, ../sass/screen.scss */
 article ul {
   margin-bottom: 1.58333em;
 }
 
-/* line 328, ../sass/screen.scss */
+/* line 327, ../sass/screen.scss */
 code {
   display: block;
   background: #666666;
@@ -1036,18 +1031,18 @@ code {
 }
 /* < 875px */
 @media screen and (max-width: 875px) {
-  /* line 360, ../sass/screen.scss */
+  /* line 359, ../sass/screen.scss */
   .container {
     max-width: 24em;
   }
 
-  /* line 363, ../sass/screen.scss */
+  /* line 362, ../sass/screen.scss */
   img#logo {
     position: inherit;
     margin-bottom: 0.25em;
   }
 
-  /* line 368, ../sass/screen.scss */
+  /* line 367, ../sass/screen.scss */
   .project {
     width: 100%;
     float: right;
@@ -1057,18 +1052,18 @@ code {
     margin: 1.25em 0;
     text-align: center;
   }
-  /* line 373, ../sass/screen.scss */
+  /* line 372, ../sass/screen.scss */
   .project img {
     opacity: 1;
   }
 
-  /* line 378, ../sass/screen.scss */
+  /* line 377, ../sass/screen.scss */
   span.date, span.title {
     float: left;
     clear: both;
   }
 
-  /* line 382, ../sass/screen.scss */
+  /* line 381, ../sass/screen.scss */
   span.date {
     margin-top: -0.75em;
   }
@@ -1081,8 +1076,13 @@ code {
     line-height: 1.5em;
   }
 
-  /* line 393, ../sass/screen.scss */
+  /* line 392, ../sass/screen.scss */
   .container {
     padding: 0 0.75em;
+  }
+
+  /* line 395, ../sass/screen.scss */
+  h1 {
+    font-size: 200%;
   }
 }
