@@ -209,8 +209,9 @@ a.ss-write:before {
     font-style: normal;
   }
   img{
-    opacity: 0.66;
     @include transition-duration(0.2s);
+    opacity: 0.66;
+    margin-top: 0.25em;
     &:hover {
       opacity: 1;
     }

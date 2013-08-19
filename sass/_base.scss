@@ -35,7 +35,7 @@ $longform: "adobe-garamond-pro", Georgia, serif;
 /* Sizing */
 
 h1, h2, h3, h4 {
-  margin-bottom: 0.5em;
+  margin-bottom: 0.2em;
 }
 
 h1 { @include adjust-font-size-to(75px); font-family: $title; font-weight: 900; line-height: 1.1;}
