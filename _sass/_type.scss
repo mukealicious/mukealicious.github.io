@@ -1,12 +1,14 @@
-// Typography
-//
+// ===========================================================================
+// #TYPOGRAPHY
 // Headings, body text, lists, and other misc typographic elements.
+// ===========================================================================
 
 h1, h2, h3, h4, h5, h6 {
   margin-bottom: .5rem;
-  font-weight: 600;
+  font-family: $title-font-family;
+  font-weight: 700;
   line-height: 1.25;
-  color: #313131;
+  color: $white;
   text-rendering: optimizeLegibility;
 }
 
@@ -25,6 +27,7 @@ h3 {
 }
 
 h4, h5, h6 {
+  color: $blue;
   margin-top: 1rem;
   font-size: 1rem;
 }
@@ -32,10 +35,6 @@ h4, h5, h6 {
 p {
   margin-top: 0;
   margin-bottom: 1rem;
-}
-
-strong {
-  color: #303030;
 }
 
 ul, ol, dl {
