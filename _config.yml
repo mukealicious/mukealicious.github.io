@@ -1,0 +1,44 @@
+# Permalinks
+permalink:          pretty
+
+# Setup
+title:              Mikey Wills
+description:        Shitting on the internet and calling it a sundae
+baseurl:            "" # the subpath of your site, e.g. /blog
+url:                https://muke.me # the base hostname & protocol for your site, e.g. http://example.com
+
+# SEO
+logo: 
+twitter:
+  username: mukealicious
+social: 
+  - https://twitter.com/mukealicious
+  - https://github.com/mukealicious
+  - http://codepen.io/mukealicious/
+  - https://dribbble.com/mukealicious
+  - https://keybase.io/mukey
+  - https://www.linkedin.com/in/mikeywills/
+
+# Assets
+#
+# We specify the directory for Jekyll so we can use @imports.
+sass:
+  sass_dir:         _sass
+  style:            :compressed
+
+# About/contact
+author:
+  name:              Mikey Wills
+  url:               https://twitter.com/mukealicious
+  email:             mikey@muke.me
+
+# Build settings
+markdown: kramdown
+theme: 
+gems:
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-sitemap
+exclude:
+  - Gemfile
+  - Gemfile.lock
