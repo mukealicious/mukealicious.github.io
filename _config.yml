@@ -28,9 +28,7 @@ sass:
 
 # About/contact
 author:
-  name:              Mikey Wills
-  url:               https://twitter.com/mukealicious
-  email:             mikey@muke.me
+  twitter: mukealicious
 
 # Build settings
 markdown: kramdown
