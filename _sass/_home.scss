@@ -1,0 +1,35 @@
+// ===========================================================================
+// #HOME
+// ===========================================================================
+
+.home-bio {
+  // position: relative;
+  margin-bottom: 8em;
+}
+
+.bio-headline {
+  font-size: 12.75vw;
+  width: 125%;
+  margin: 0;
+  white-space: nowrap;
+  overflow-x: hidden;
+  position: absolute;
+  left: -1.75vw;
+  margin-top: 7.25rem;
+  z-index: -1;
+}
+
+.bio-visual {
+  width: 28.888888889rem;
+  height: 47.777777778rem;
+  background-image: url('/assets/images/muke-purp.jpg');
+  background-size: 100%;
+  position: absolute;
+  bottom: 0;
+  right: 1vw;
+  z-index: -2;
+  opacity: 0;
+  animation: fadeIn 2000ms ease-in-out forwards;
+  animation-delay: 1000ms;
+}
+

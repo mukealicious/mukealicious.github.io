@@ -1,0 +1,97 @@
+// ===========================================================================
+// #ANIMATIONS
+// ===========================================================================
+
+@keyframes bgFade {
+  0% {
+    background-color: #fff;
+  }
+  100% {
+    background-color: $body-bg;
+  }
+}
+
+@keyframes fadeIn {
+ 0% {
+   opacity: 0;
+ }
+ 100% {
+   opacity: 1;
+ }
+}
+
+@keyframes flicker {
+ 0% {
+   opacity: 1;
+ }
+
+ 10% {
+   opacity: 0;
+ }
+
+ 12% {
+   opacity: 1;
+ }
+
+ 14% {
+   opacity: 0;
+ }
+
+ 16% {
+   opacity: 1;
+ }
+
+ 18% {
+   opacity: 0;
+ }
+
+ 20% {
+   opacity: 1;
+ }
+
+ 25% {
+   opacity: 0
+ }
+
+ 30% {
+   opacity: 1;
+ }
+
+ 40% {
+   opacity: 0;
+ }
+
+ 60% {
+   opacity: 1;
+ }
+
+ 62% {
+   opacity: 0;
+ }
+
+ 64% {
+   opacity: 1;
+ }
+
+ 70% {
+   opacity: 0;
+ }
+
+ 84% {
+   opacity: 1;
+ }
+
+ 86% {
+   opacity: 0;
+ }
+
+ 100% {
+   opacity: 0;
+ }
+}
+
+@keyframes draw {
+100% {
+  stroke-dashoffset: 0;
+}
+}

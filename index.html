@@ -2,24 +2,39 @@
 layout: default
 title: Home
 ---
-<img src="{{ site.baseurl }}/assets/muke-zag.svg" />
+{% include muke-zag.html %}
+<div class="home-bio">
+  <h1 class="bio-headline">I'm Mikey Wills.</h1>
+  <dl class="simple-list">
+    <dt class="list-section">Mikey loves  beautiful software.</dt>
+    <dt>Mikey builds beautiful software.</dt>
+    <dt>Mikey is &mdash;</dt>
+    <dt class="list-section">Working</dt>
+    <dd>
+      Currently: &nbsp;Engineer @ <a href="https://www.designinc.com/" target="_blank">Design Inc.</a>
+    </dd>
+    <dd>
+      Previously: Design &nbsp;&nbsp;@ <a href="https://www.invibe.co/" target="_blank">inVibe</a>
+    </dd>
+    <dt class="list-section">Making</dt>
+    <dd>
+      Project: &hellip;
+    </dd>
+    <!-- <dd>
+      Writing: <a href="{{ site.posts.first.url }}">{{ site.posts.first.title }}</a>
+    </dd> -->
+    <dt class="list-section">And wasting</dt>
+    <dd>
+      <a class="button" href="https://twitter.com/mukealicious" target="_blank">Twitter</a>
+    </dd>
+    <dd>
+      <a class="button" href="https://twitter.com/mukealicious" target="_blank">Github</a>
+    </dd>
+    <dd>
+      <a class="button" href="mailto:mikey@muke.me?subject=Yo Mukey!" target="_blank">Email</a>
+    </dd>
+  </dl>
+</div>
+<div class="bio-visual focused"></div>
 
-<h1>I'm Mikey Wills</h1>
-<p>
-  Mikey loves  beautiful software. <br/>
-  Mikey builds beautiful software. <br/>
-  Mikey is - <br/>
-</p>
-<p>
-  Working <br/>
-  &nbsp;&nbsp;Currently:  Engineer @ <a href="https://www.designinc.com/" target="_blank">Design Inc.</a> <br/>
-  &nbsp;&nbsp;Previously: Design @ <a href="https://www.invibe.co/" target="_blank">inVibe</a>
-</p>
-<p>
-  Making <br/>
-  &nbsp;&nbsp;Project: React UI Cheatsheet <br/>
-  &nbsp;&nbsp;Writing: <a href="{{ site.posts.first.url }}">{{ site.posts.first.title }}</a>
-</p>
-<p>
-  And wasting
-</p>
+<script src="{{ "/assets/javascripts/home.js" | relative_url }}"></script>

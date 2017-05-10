@@ -1,0 +1,33 @@
+// ===========================================================================
+// #LISTS
+// DL, UL, OL
+// ===========================================================================
+
+// Variables
+
+$indent: 1.2em;
+$list-break: 2em;
+
+// Lists
+
+.simple-list {
+  list-style: none;
+  
+  dt {
+    font-weight: normal;
+  }
+  
+  dd {
+    margin: 0 0 0 $indent;
+    
+    .button {
+      display: inline-block;
+      min-width: 7em;
+      margin: 0.6em auto;
+    }
+  }
+  
+  .list-section {
+    margin-top: $list-break;
+  }
+}

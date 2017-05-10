@@ -1,0 +1,30 @@
+// ===========================================================================
+// #BUTTONS
+// ===========================================================================
+
+.button {
+  position: relative;
+  
+  &:before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0.35em;
+    width: 101%;
+    z-index: -1;
+    height: 0.6em;
+    background-color: #fff;
+    transition: all .175s ease;
+  }
+  
+  &:hover {
+    cursor: pointer;
+    text-decoration: none;
+    
+    &:before {
+      bottom: -0.15em;
+      left: 0.5em;
+      filter: blur(4px);
+    }
+  }
+}

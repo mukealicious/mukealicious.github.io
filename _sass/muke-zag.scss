@@ -1,0 +1,43 @@
+// ===========================================================================
+// #MUKE ZAG
+// The Mikey Wills zig-zag animation
+// ===========================================================================
+
+#muke-zag {
+  height: 100%;
+  width: 100%;
+  max-width: 35em;
+  padding: 1.2em;
+  
+  // First, the dots fade in
+  .zag-dot{
+    opacity: 0;
+    animation: fadeIn 500ms ease-in-out forwards;
+  }
+  
+  // Next, the letters flicker on
+  .zag-letter {
+    opacity: 0;
+    animation-name: flicker;
+    animation-duration: 2000ms;
+    animation-delay: 450ms;
+    animation-direction: reverse;
+    animation-fill-mode: forwards;
+    animation-timing-function: steps(17);
+  }
+  
+  // Last, the connecting stroke is animated
+  .zag-stroke {
+    opacity: 1;
+    stroke-dasharray: 1200;
+    stroke-dashoffset: 1200;
+  }
+  
+  #m .zag-stroke {
+    animation: draw 800ms linear 2800ms forwards;
+  }
+  
+  #w .zag-stroke {
+    animation: draw 800ms linear 3800ms forwards;
+  }
+}
