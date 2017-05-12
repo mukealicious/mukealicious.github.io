@@ -13,7 +13,7 @@ body.page-Home {
 }
 
 .home-bio {
-  margin-bottom: 35rem;
+  margin-bottom: 27rem;
 
   @media screen and (min-width: 500px) {
     margin-bottom: 25rem;
@@ -52,11 +52,11 @@ body.page-Home {
 
 .bio-visual {
   width: 28.888888889rem;
-  height: 47.777777778rem;
+  height: 38rem;
   background-image: url('/assets/images/muke-purp.jpg');
   background-size: 26rem;
   background-repeat: no-repeat;
-  background-position: 8rem bottom;
+  background-position: 8rem top;
   position: absolute;
   bottom: 0;
   right: 0;
@@ -66,6 +66,11 @@ body.page-Home {
           animation: fadeIn 2000ms ease-in-out forwards;
   -webkit-animation-delay: 1000ms;
           animation-delay: 1000ms;
+
+  @media screen and (min-width: 500px) {
+    height: 47.777777778rem;
+    background-position: 8rem bottom;
+  }
 
   @media screen and (min-width: 860px) {
     background-size: contain;
