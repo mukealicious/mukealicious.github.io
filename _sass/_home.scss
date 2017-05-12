@@ -2,11 +2,21 @@
 /* #HOME*/
 /* ===========================================================================*/
 
+body.page-Home {
+  position: relative;
+  max-width: 100%;    
+  overflow-x: hidden;
+  transform: translateZ(1000px);
+  transform-style: preserve-3d;
+  -webkit-animation: bgFade 2500ms ease-in-out forwards;
+          animation: bgFade 2500ms ease-in-out forwards;
+}
+
 .home-bio {
-  margin-bottom: 37rem;
+  margin-bottom: 35rem;
 
   @media screen and (min-width: 500px) {
-    margin-bottom: 27rem;
+    margin-bottom: 25rem;
   }
 
   @media screen and (min-width: 680px) {
@@ -17,7 +27,6 @@
 .bio-headline {
   font-size: 12vw;
   line-height: 1.25;
-  width: 125%;
   margin: 0;
   white-space: nowrap;
   overflow-x: hidden;
@@ -45,10 +54,12 @@
   width: 28.888888889rem;
   height: 47.777777778rem;
   background-image: url('/assets/images/muke-purp.jpg');
-  background-size: 100%;
+  background-size: 26rem;
+  background-repeat: no-repeat;
+  background-position: 8rem bottom;
   position: absolute;
   bottom: 0;
-  right: -8rem;
+  right: 0;
   z-index: -2;
   opacity: 0;
   -webkit-animation: fadeIn 2000ms ease-in-out forwards;
@@ -57,6 +68,8 @@
           animation-delay: 1000ms;
 
   @media screen and (min-width: 860px) {
+    background-size: contain;
+    background-position: center bottom;
     left: 55%;
   }
 
