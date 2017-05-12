@@ -6,9 +6,10 @@ title:              Mikey Wills
 description:        Shitting on the internet and calling it a sundae
 baseurl:            "" # the subpath of your site, e.g. /blog
 url:                https://muke.me # the base hostname & protocol for your site, e.g. http://example.com
+analytics_id:       UA-33507363-1
 
 # SEO
-logo: 
+logo: /assets/images/muke-logo.png
 twitter:
   username: mukealicious
 social: 
