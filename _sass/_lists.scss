@@ -5,8 +5,8 @@
 
 /* Variables*/
 
-$indent: 1.2em;
-$list-break: 2em;
+$indent: 1.2rem;
+$list-break: 2rem;
 
 /* Lists*/
 
@@ -20,11 +20,16 @@ $list-break: 2em;
   dd {
     margin: 0 0 0 $indent;
     
-    .button {
-      display: inline-block;
-      min-width: 7em;
-      margin: 0.6em auto;
+    &.list-button {
+      margin-top: 1.5rem;
+      margin-bottom: 1.5rem;
+
+      .button {
+        display: inline-block;
+        min-width: 7rem;
+      }
     }
+    
   }
   
   .list-section {

@@ -3,20 +3,41 @@
 /* ===========================================================================*/
 
 .home-bio {
-  /* position: relative;*/
-  margin-bottom: 8em;
+  margin-bottom: 37rem;
+
+  @media screen and (min-width: 500px) {
+    margin-bottom: 27rem;
+  }
+
+  @media screen and (min-width: 680px) {
+    margin-bottom: 8rem;
+  }
 }
 
 .bio-headline {
-  font-size: 12.75vw;
+  font-size: 12vw;
   width: 125%;
   margin: 0;
   white-space: nowrap;
   overflow-x: hidden;
   position: absolute;
   left: -1.75vw;
-  margin-top: 7.25rem;
+  margin-top: 10rem;
   z-index: -1;
+
+  @media screen and (max-width: 680px) {
+    bottom: 10.5rem;
+  }
+
+  @media screen and (min-width: 860px) {
+    margin-top: 7.5rem;
+  }
+  
+  @media screen and (min-width: 1500px) {
+    font-size: 11rem;
+    margin-top: 5rem;
+    left: -1rem;
+  }
 }
 
 .bio-visual {
@@ -26,12 +47,21 @@
   background-size: 100%;
   position: absolute;
   bottom: 0;
-  right: 1vw;
+  right: -8rem;
   z-index: -2;
   opacity: 0;
   -webkit-animation: fadeIn 2000ms ease-in-out forwards;
           animation: fadeIn 2000ms ease-in-out forwards;
   -webkit-animation-delay: 1000ms;
           animation-delay: 1000ms;
+
+  @media screen and (min-width: 860px) {
+    left: 55%;
+  }
+
+  @media screen and (min-width: 1500px) {
+    left: 900px;
+    right: auto;
+  }
 }
 

@@ -10,17 +10,11 @@
 }
 
 .masthead-title {
+  font-size: 18px;
   margin-top: 0;
   margin-bottom: 0;
-  color: $gray-4;
 
   a {
     color: inherit;
-  }
-
-  small {
-    font-size: 75%;
-    font-weight: 400;
-    opacity: .5;
   }
 }

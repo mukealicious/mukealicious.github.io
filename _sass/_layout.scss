@@ -16,25 +16,25 @@
   max-width: 38rem;
 }
 
-footer {
-  margin: 2rem auto;
-}
-
 /* Fullscreen div*/
 
 .fullscreen {
-  height: 45rem;
-  height: 100vh;
   width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  text-align: center;
+  margin: 5rem auto;
+
+  @media screen and (min-width: 680px) {
+    height: 45rem;
+    height: 100vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    text-align: center;
+  }
 }
 
