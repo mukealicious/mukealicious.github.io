@@ -1,8 +1,8 @@
-// ===========================================================================
-// #CODE
-// Inline and block-level code snippets. Includes tweaks to syntax highlighted
-// snippets from Pygments/Rouge and Gist embeds.
-// ===========================================================================
+/* ===========================================================================*/
+/* #CODE*/
+/* Inline and block-level code snippets. Includes tweaks to syntax highlighted*/
+/* snippets from Pygments/Rouge and Gist embeds.*/
+/* ===========================================================================*/
 
 code,
 pre {
@@ -29,7 +29,7 @@ pre code {
   background-color: transparent;
 }
 
-// Pygments via Jekyll
+/* Pygments via Jekyll*/
 .highlight {
   padding: 1rem;
   margin-bottom: 1rem;
@@ -44,36 +44,37 @@ pre code {
   }
 
   .lineno {
-    display: inline-block; // Ensures the null space also isn't selectable
+    display: inline-block; /* Ensures the null space also isn't selectable*/
     padding-right: .75rem;
     padding-left: .25rem;
     color: #999;
-    // Make sure numbers aren't selectable
+    /* Make sure numbers aren't selectable*/
     -webkit-user-select: none;
        -moz-user-select: none;
-            user-select: none;
+            -ms-user-select: none;
+        user-select: none;
   }
 }
 
 
-// Gist via GitHub Pages
-// .gist .gist-file {
-//   font-family: Menlo, Monaco, "Courier New", monospace !important;
-// }
-// .gist .markdown-body {
-//   padding: 15px;
-// }
-// .gist pre {
-//   padding: 0;
-//   background-color: transparent;
-// }
-// .gist .gist-file .gist-data {
-//   font-size: .8rem !important;
-//   line-height: 1.4;
-// }
-// .gist code {
-//   padding: 0;
-//   color: inherit;
-//   background-color: transparent;
-//   border-radius: 0;
-// }
+/* Gist via GitHub Pages*/
+/* .gist .gist-file {*/
+/*   font-family: Menlo, Monaco, "Courier New", monospace !important;*/
+/* }*/
+/* .gist .markdown-body {*/
+/*   padding: 15px;*/
+/* }*/
+/* .gist pre {*/
+/*   padding: 0;*/
+/*   background-color: transparent;*/
+/* }*/
+/* .gist .gist-file .gist-data {*/
+/*   font-size: .8rem !important;*/
+/*   line-height: 1.4;*/
+/* }*/
+/* .gist code {*/
+/*   padding: 0;*/
+/*   color: inherit;*/
+/*   background-color: transparent;*/
+/*   border-radius: 0;*/
+/* }*/
