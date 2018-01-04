@@ -53,5 +53,8 @@ DEPENDENCIES
   jekyll-sitemap
   tzinfo-data
 
+RUBY VERSION
+   ruby 2.2.3p173
+
 BUNDLED WITH
-   1.14.4
+   1.16.1
